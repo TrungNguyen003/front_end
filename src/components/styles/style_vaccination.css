@@ -1,0 +1,779 @@
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+      "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+      "Source Han Sans CN", sans-serif;
+  }
+  
+  .main-container-141 {
+    overflow: hidden;
+  }
+  
+  .main-container-141,
+  .main-container-141 * {
+    box-sizing: border-box;
+  }
+  
+  input,
+  select,
+  textarea,
+  button {
+    outline: 0;
+  }
+  
+  .main-container-141 {
+    position: relative;
+    width: 1850px; /* Đảm bảo chiều rộng luôn chiếm 100% màn hình */
+    height: 4260px; /* Tự động điều chỉnh chiều cao */
+    margin: 0 auto;
+    background: #f4f4f4;
+    padding: 20px; /* Thêm padding để đảm bảo nội dung không bị sát lề */
+    overflow: hidden;
+  }
+  
+
+
+
+  .frame-141 {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 120px;
+    position: absolute;
+    width: 1560px;
+    height: 28px;
+    top: 24px;
+    left: 94px;
+    z-index: 30;
+  }
+
+  .dich-vu-tiem-vac-xin-141 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    width: 1036px;
+    height: 56px;
+    margin: 170px 0 0 442px;
+    color: #1d5d9b;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 56px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 49;
+  }
+  .flex-row-ea-141 {
+    position: relative;
+    width: 1822px;
+    height: 59px;
+    margin: 40px 0 0 49px;
+    z-index: 61;
+  }
+  .petsstore-141 {
+    position: absolute;
+    width: 207px;
+    height: 59px;
+    top: 0;
+    left: 808px;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58.944px;
+    text-align: center;
+    text-overflow: initial;
+    white-space: nowrap;
+    z-index: 59;
+  }
+  .pets-b-141 {
+    position: relative;
+    color: #1d5d9b;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58.944px;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  .store-c-141 {
+    position: relative;
+    color: #f57f20;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58.944px;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  .rectangle-d-141 {
+    position: absolute;
+    width: 806px;
+    height: 6px;
+    top: 27px;
+    left: 0;
+    background: rgba(29, 93, 155, 0.4);
+    z-index: 60;
+  }
+  .rectangle-e-141 {
+    position: absolute;
+    width: 797px;
+    height: 6px;
+    top: 27px;
+    left: 1025px;
+    background: rgba(29, 93, 155, 0.4);
+    z-index: 61;
+  }
+  .flex-row-141 {
+    position: relative;
+    width: 5333.5px;
+    height: 2974px;
+    margin: 52px 0 0 49px;
+    z-index: 50;
+  }
+  .tiem-phong-vac-xin-141 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: absolute;
+    width: 942px;
+    height: 47px;
+    top: 0;
+    left: 440px;
+    color: #1d5d9b;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 46.875px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 50;
+  }
+  .rectangle-f-141 {
+    position: absolute;
+    width: 1822px;
+    height: 2948px;
+    top: 26px;
+    left: 0;
+    font-size: 0px;
+    background: url(../assets/images/dda9c181-2615-4e4a-8566-9c908581ed7f.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 44;
+  }
+  .kiem-tra-suc-khoe-141 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    width: 786px;
+    height: 42px;
+    margin: 139px 0 0 53px;
+    color: #1d5d9b;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 51;
+  }
+  .thu-cung-khi-den-141 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: relative;
+    width: 1751px;
+    height: 56px;
+    margin: 20px 0 0 53px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.125px;
+    text-align: left;
+    text-transform: capitalize;
+    z-index: 55;
+  }
+  .su-dung-vac-xin-141 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    width: 988px;
+    height: 42px;
+    margin: 40px 0 0 53px;
+    color: #1d5d9b;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 52;
+  }
+  .vac-xin-chat-luong-141 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: relative;
+    width: 1734px;
+    height: 56px;
+    margin: 20px 0 0 53px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.125px;
+    text-align: left;
+    text-transform: capitalize;
+    z-index: 56;
+  }
+  .moi-truong-tiem-phong-141 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    width: 529px;
+    height: 42px;
+    margin: 40px 0 0 53px;
+    color: #1d5d9b;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 53;
+  }
+  .doi-ngu-thu-y-141 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    width: 662px;
+    height: 42px;
+    margin: 144px 0 0 53px;
+    color: #1d5d9b;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 54;
+  }
+  .nhan-vien-bac-si-141 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: relative;
+    width: 1742px;
+    height: 56px;
+    margin: 20px 0 0 53px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.125px;
+    text-align: left;
+    text-transform: capitalize;
+    z-index: 58;
+  }
+  .lich-tiem-phong-cho-cho-meo-141 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    width: 553px;
+    height: 47px;
+    margin: 270px 0 0 635px;
+    color: #1d5d9b;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 46.875px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 71;
+  }
+  .lich-tiem-phong-cho-cho-141 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    width: 464px;
+    height: 47px;
+    margin: 97px 0 0 53px;
+    color: #1d5d9b;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 46.875px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 73;
+  }
+  .vector-10-141 {
+    position: relative;
+    width: 18px;
+    height: 10.575px;
+    margin: 10.294px 0 0 106px;
+    background: url(../assets/images/6463a837-e8c0-41fa-921f-c28410ba51de.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 22;
+  }
+  .cho-6-tuan-tuoi-141 {
+    display: block;
+    position: relative;
+    height: 28px;
+    margin: 13.131px 0 0 53px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 75;
+  }
+  .cho-9-tuan-tuoi-141 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: relative;
+    width: 1728px;
+    height: 56px;
+    margin: 20px 0 0 52px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.125px;
+    text-align: left;
+    text-transform: capitalize;
+    z-index: 77;
+  }
+  .cho-12-tuan-tuoi-141 {
+    display: block;
+    position: relative;
+    height: 28px;
+    margin: 20px 0 0 53px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 76;
+  }
+  .cho-15-tuan-tuoi-141 {
+    display: block;
+    position: relative;
+    height: 28px;
+    margin: 20px 0 0 53px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 78;
+  }
+  .cho-tiem-nhac-lai-141 {
+    display: block;
+    position: relative;
+    height: 28px;
+    margin: 20px 0 0 53px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 79;
+  }
+  .lich-tiem-phong-cho-meo-141 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    width: 472px;
+    height: 47px;
+    margin: 48px 0 0 53px;
+    color: #1d5d9b;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 46.875px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 74;
+  }
+  .meo-6-8-tuan-tuoi-141 {
+    display: block;
+    position: relative;
+    height: 28px;
+    margin: 22px 0 0 53px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 80;
+  }
+  .meo-9-12-tuan-tuoi-141 {
+    display: block;
+    position: relative;
+    height: 28px;
+    margin: 22px 0 0 53px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 81;
+  }
+  .meo-16-tuan-tuoi-141 {
+    display: block;
+    position: relative;
+    height: 28px;
+    margin: 22px 0 0 53px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 82;
+  }
+  .meo-tiem-nhac-lai-141 {
+    display: block;
+    position: relative;
+    height: 28px;
+    margin: 22px 0 0 53px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 67;
+  }
+  .luu-y-khi-tiem-phong-141 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    width: 794px;
+    height: 47px;
+    margin: 89px 0 0 514px;
+    color: #1d5d9b;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 46.875px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 72;
+  }
+  .khong-nen-tiem-phong-141 {
+    display: block;
+    position: relative;
+    height: 38px;
+    margin: 68px 0 0 17px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.125px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 89;
+  }
+  .khong-nen-an-sau-tiem-phong-141 {
+    display: block;
+    position: relative;
+    height: 28px;
+    margin: 33px 0 0 17px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 83;
+  }
+  .khong-nen-tiem-phong-neu-co-bieu-hien-141 {
+    display: block;
+    position: relative;
+    height: 28px;
+    margin: 34px 0 0 17px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 66;
+  }
+  .nen-kieng-tam-sau-tiem-phong-141 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: relative;
+    width: 1010px;
+    height: 54px;
+    margin: 0 0 0 16px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.125px;
+    text-align: left;
+    text-transform: capitalize;
+    z-index: 90;
+  }
+  .can-tiem-phong-day-du-141 {
+    display: block;
+    position: relative;
+    height: 28px;
+    margin: 22px 0 0 17px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 65;
+  }
+  .sau-khi-tiem-141 {
+    display: block;
+    position: relative;
+    height: 28px;
+    margin: 22px 0 0 17px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 64;
+  }
+  .text-2f-141 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: relative;
+    width: 1689px;
+    height: 56px;
+    margin: 20px 0 0 17px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.125px;
+    text-align: left;
+    text-transform: capitalize;
+    z-index: 63;
+  }
+  .rectangle-11-141 {
+    position: relative;
+    width: 721px;
+    height: 100px;
+    margin: 70px 0 0 552px;
+    cursor: pointer;
+    font-size: 0px;
+    background: #1d5d9b;
+    border: none;
+    z-index: 68;
+    overflow: visible auto;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+  }
+  .lien-he-lich-141 {
+    display: block;
+    position: relative;
+    height: 38px;
+    margin: 14px 0 0 15px;
+    color: #ffffff;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 37.5px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 69;
+  }
+  .hotline-141 {
+    display: block;
+    position: relative;
+    height: 38px;
+    margin: -3px 0 0 158px;
+    color: #ffffff;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 37.5px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 70;
+  }
+  .object-141 {
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    top: 503px;
+    left: 1637px;
+    z-index: 17;
+    overflow: hidden;
+  }
+  .petstore-an-toan-141 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: absolute;
+    width: 1742px;
+    height: 84px;
+    top: 517px;
+    left: 53px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.125px;
+    text-align: left;
+    text-transform: capitalize;
+    z-index: 57;
+  }
+
+  .rectangle-13-141 {
+    position: absolute;
+    width: 721px;
+    height: 100px;
+    top: 799px;
+    left: 552px;
+    cursor: pointer;
+    font-size: 0px;
+    background: #1d5d9b;
+    border: none;
+    z-index: 46;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+  .lien-he-lich-14-141 {
+    display: block;
+    position: relative;
+    height: 38px;
+    margin: 14px 0 0 15px;
+    color: #ffffff;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 37.5px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 47;
+  }
+  .hotline-15-141 {
+    display: block;
+    position: relative;
+    height: 38px;
+    margin: -3px 0 0 158px;
+    color: #ffffff;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 37.5px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 48;
+  }
+  .vector-16-141 {
+    position: absolute;
+    width: 18px;
+    height: 10.575px;
+    top: 843.132px;
+    left: 106px;
+    background: url(../assets/images/c9a849d2-dc0d-4c62-bc08-e4d2f35d2dbe.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 20;
+  }
+  .inner-plugin-iframe-141 {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: 826px;
+    left: 5189.5px;
+    z-index: 25;
+    overflow: hidden;
+  }
+  .inner-plugin-iframe-17-141 {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: 826px;
+    left: 5285.5px;
+    z-index: 26;
+    overflow: hidden;
+  }
+  .petstore-copyright-141 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 180px;
+    height: 18px;
+    margin: 127px 0 0 177px;
+    color: #ffffff;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 17.578px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 18;
+  }

@@ -1,0 +1,578 @@
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+      "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+      "Source Han Sans CN", sans-serif;
+  }
+  
+  .main-container-140  {
+    overflow: hidden;
+  }
+  
+  .main-container-140 ,
+  .main-container-140  * {
+    box-sizing: border-box;
+  }
+  
+  input,
+  select,
+  textarea,
+  button {
+    outline: 0;
+  }
+  
+  .main-container-140 {
+    position: relative;
+    margin: 0 auto;
+    width: 1850px;
+    height: 2050px;
+    background: #e0f4ff;
+    overflow: hidden;
+  }
+
+
+  .flex-row-fd-140  {
+    position: relative;
+    width: 5333.5px;
+    height: 1292px;
+    margin: 1px 0 0 15px;
+    z-index: 43;
+  }
+  .rectangle-11-140  {
+    position: absolute;
+    width: 1822px;
+    height: 1292px;
+    top: 0;
+    left: 0;
+    font-size: 0px;
+    background: #ffffff;
+    z-index: 43;
+  }
+  .dich-vu-cham-soc-cho-meo-tai-petstore-140  {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    width: 887px;
+    height: 56px;
+    margin: 85px 0 0 468px;
+    color: #1d5d9b;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 56px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 60;
+  }
+  .flex-row-bd-140  {
+    position: relative;
+    width: 1819px;
+    height: 59px;
+    margin: 40px 0 0 0;
+    z-index: 63;
+  }
+  .petsstore-140  {
+    position: absolute;
+    width: 207px;
+    height: 59px;
+    top: 0;
+    left: 808px;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58.944px;
+    text-align: center;
+    text-overflow: initial;
+    white-space: nowrap;
+    z-index: 61;
+  }
+  .pets-12-140  {
+    position: relative;
+    color: #1d5d9b;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58.944px;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  .store-13-140  {
+    position: relative;
+    color: #f57f20;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58.944px;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  .rectangle-14-140  {
+    position: absolute;
+    width: 806px;
+    height: 6px;
+    top: 27px;
+    left: 0;
+    background: rgba(29, 93, 155, 0.4);
+    z-index: 62;
+  }
+  .rectangle-15-140  {
+    position: absolute;
+    width: 794px;
+    height: 6px;
+    top: 27px;
+    left: 1025px;
+    background: rgba(29, 93, 155, 0.4);
+    z-index: 63;
+  }
+  .flex-row-c-140  {
+    position: relative;
+    width: 1675px;
+    height: 778px;
+    margin: 114px 0 0 106px;
+    z-index: 78;
+  }
+  .tiem-phong-cho-cho-meo-140  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 421px;
+    height: 42px;
+    top: 0;
+    left: 28px;
+    color: #1d5d9b;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 45;
+  }
+
+  .tiem-phong-cho-cho-meo-140 a {
+    color: #1d5d9b;
+    font-family: Roboto, var(--default-font-family);
+  }
+  .ellipse-16-140  {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 931px;
+    background: url(../assets/images/10b6a662-e7a7-4ec7-8348-74e0ae49087a.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 55;
+    border-radius: 50%;
+  }
+  .image-140  {
+    position: absolute;
+    width: 608px;
+    height: 732px;
+    top: 0;
+    left: 1067px;
+    background: url(../assets/images/b4980d9c-0464-40b6-8163-12d3d27aaa29.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 78;
+    border-radius: 30px;
+  }
+  .vector-17-140  {
+    position: relative;
+    width: 11.5px;
+    height: 8.002px;
+    margin: 7.749px 0 0 597.25px;
+    background: url(../assets/images/ebc9d0d6-f672-4511-b697-2280999559a1.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 23;
+  }
+  .object-140  {
+    position: relative;
+    width: 125px;
+    height: 125px;
+    margin: 451.249px 0 0 464px;
+    z-index: 17;
+    overflow: hidden;
+  }
+  .ph-syringe-140  {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 20px;
+    left: 951px;
+    z-index: 76;
+    overflow: hidden;
+  }
+  .vector-18-140  {
+    position: relative;
+    width: 52.502px;
+    height: 52.502px;
+    margin: 3.749px 0 0 3.749px;
+    background: url(../assets/images/4c485506-c18c-4cb5-af6d-cbf251bcb012.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 77;
+  }
+  .tiem-phong-day-du-140  {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    width: 674px;
+    height: 56px;
+    top: 62px;
+    left: 28px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.125px;
+    text-align: left;
+    text-transform: capitalize;
+    z-index: 50;
+  }
+  .vector-19-140  {
+    position: absolute;
+    width: 18px;
+    height: 5.851px;
+    top: 142.433px;
+    left: 0;
+    background: url(../assets/images/a2f12442-2f8b-45f7-9ff8-03380280fde2.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 19;
+  }
+  .grooming-cat-tia-140  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 722px;
+    height: 42px;
+    top: 158px;
+    left: 28px;
+    color: #1d5d9b;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 46;
+  }
+  .ellipse-1a-140  {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 158px;
+    left: 931px;
+    background: url(../assets/images/4a97c821-95fd-40c9-ad03-46d2c21aca6b.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 56;
+    border-radius: 50%;
+  }
+  .mingcute-scissors-line-140  {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 178px;
+    left: 951px;
+    z-index: 72;
+    overflow: hidden;
+  }
+  .group-1b-140  {
+    position: relative;
+    width: 44.999px;
+    height: 54.852px;
+    margin: 4.683px 0 0 7.5px;
+    z-index: 73;
+    overflow: visible auto;
+  }
+  .vector-1c-140  {
+    position: relative;
+    width: 44.999px;
+    height: 50.317px;
+    margin: 0 0 0 0;
+    background: url(../assets/images/29c37ed5-3f1e-465f-bd8d-0f1308019ef6.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 75;
+  }
+  .vector-1d-140  {
+    position: relative;
+    width: 2.09px;
+    height: 1.675px;
+    margin: 2.861px 0 0 22.69px;
+    background: url(../assets/images/ac777501-763e-4118-a2d4-b4bc2f2dda9e.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 74;
+  }
+  .grooming-lam-dep-cho-140 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    width: 674px;
+    height: 56px;
+    top: 220px;
+    left: 28px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.125px;
+    text-align: left;
+    text-transform: capitalize;
+    z-index: 51;
+  }
+  .dich-vu-tam-cho-140  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 348px;
+    height: 42px;
+    top: 313px;
+    left: 28px;
+    color: #1d5d9b;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 47;
+  }
+  .ellipse-1e-140  {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 316px;
+    left: 931px;
+    background: url(../assets/images/a636d3e0-0917-40f5-a726-db97da9ebf3a.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 57;
+    border-radius: 50%;
+  }
+  .lucide-bath-140  {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 336px;
+    left: 951px;
+    z-index: 70;
+    overflow: hidden;
+  }
+  .vector-1f-140  {
+    position: relative;
+    width: 52px;
+    height: 47px;
+    margin: 6.5px 0 0 4px;
+    background: url(../assets/images/4cacf652-0956-4178-ac51-f238db26f4fe.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 71;
+  }
+  .vector-20-140  {
+    position: absolute;
+    width: 18px;
+    height: 5.851px;
+    top: 356.663px;
+    left: 0;
+    background: url(../assets/images/d3c369e7-ac50-47e0-9e4e-803adf9a7ae3.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 21;
+  }
+  .dich-vu-petstore-140  {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    width: 674px;
+    height: 56px;
+    top: 378px;
+    left: 28px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.125px;
+    text-align: left;
+    text-transform: capitalize;
+    z-index: 52;
+  }
+  .dich-vu-tri-ve-140  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 430px;
+    height: 42px;
+    top: 474px;
+    left: 27px;
+    color: #1d5d9b;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 48;
+  }
+  .ellipse-21-140  {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 474px;
+    left: 931px;
+    background: url(../assets/images/2d44078f-788f-4ca5-876a-38ed710e8f16.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 58;
+    border-radius: 50%;
+  }
+  .healthicons-virus-sanitizer-spray-140  {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 494px;
+    left: 956px;
+    z-index: 68;
+    overflow: hidden;
+  }
+  .group-22-140  {
+    position: relative;
+    width: 45px;
+    height: 44.996px;
+    margin: 7.504px 0 0 7.5px;
+    background: url(../assets/images/658c7ec7-e83c-4e74-a65a-c8d524c9b8c3.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 69;
+  }
+  .giai-phap-tri-ve-140  {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    height: 28px;
+    top: 550px;
+    left: 28px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 53;
+  }
+  .trong-giu-cho-meo-140  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 517px;
+    height: 42px;
+    top: 632px;
+    left: 27px;
+    color: #1d5d9b;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 49;
+  }
+  .ellipse-23-140  {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 632px;
+    left: 931px;
+    background: url(../assets/images/1106b61d-5495-41e5-8cc6-dabd2c784557.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 59;
+    border-radius: 50%;
+  }
+  .fluent-emoji-high-contrast-house-140  {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 652px;
+    left: 950px;
+    z-index: 65;
+    overflow: hidden;
+  }
+  .group-24-140  {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 66;
+  }
+  .clip-path-group-140  {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url(../assets/images/e55154e9-ac69-4e7b-980e-cbfb7c526205.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 67;
+  }
+  .cham-soc-cho-meo-140  {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    width: 674px;
+    height: 84px;
+    top: 694px;
+    left: 28px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.125px;
+    text-align: left;
+    text-transform: capitalize;
+    z-index: 54;
+  }
+  .inner-plugin-iframe-140  {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: 1118px;
+    left: 5189.5px;
+    z-index: 24;
+    overflow: hidden;
+  }
+  .inner-plugin-iframe-25-140  {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: 1118px;
+    left: 5285.5px;
+    z-index: 25;
+    overflow: hidden;
+  }
+  

@@ -1,0 +1,9 @@
+.scrollable-table {
+    max-height: 300px; /* Điều chỉnh chiều cao tối đa */
+    overflow-y: auto;
+  }
+  
+  .table-container {
+    width: 100%;
+    margin: 0 auto;
+  }

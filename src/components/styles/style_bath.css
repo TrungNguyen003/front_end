@@ -1,0 +1,1054 @@
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+      "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+      "Source Han Sans CN", sans-serif;
+  }
+  
+  .main-container-142 {
+    overflow: hidden;
+  }
+  
+  .main-container-142,
+  .main-container-142 * {
+    box-sizing: border-box;
+  }
+  
+  input,
+  select,
+  textarea,
+  button {
+    outline: 0;
+  }
+  
+  .main-container-142 {
+    position: relative;
+    width: 1920px;
+    height: 4970px;
+    margin: 0 auto;
+    background: #f4f4f4;
+    overflow: hidden;
+  }
+
+  .flex-row-edd-142 {
+    position: relative;
+    width: 5333.5px;
+    height: 4113px;
+    margin: 85px 0 0 49px;
+    z-index: 42;
+  }
+  .rectangle-c-142 {
+    position: absolute;
+    width: 1822px;
+    height: 4113px;
+    top: 0;
+    left: 0;
+    font-size: 0px;
+    background: #ffffff;
+    z-index: 42;
+  }
+  .bathing-service-petstore-142 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    width: 748px;
+    height: 56px;
+    margin: 85px 0 0 537px;
+    color: #1d5d9b;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 56px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 44;
+  }
+  .flex-row-bc-142 {
+    position: relative;
+    width: 1822px;
+    height: 59px;
+    margin: 40px 0 0 0;
+    z-index: 47;
+  }
+  .petstore-142 {
+    position: absolute;
+    width: 207px;
+    height: 59px;
+    top: 0;
+    left: 808px;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58.944px;
+    text-align: center;
+    text-overflow: initial;
+    white-space: nowrap;
+    z-index: 45;
+  }
+  .pets-d-142 {
+    position: relative;
+    color: #1d5d9b;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58.944px;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  .store-e-142 {
+    position: relative;
+    color: #f57f20;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58.944px;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  .rectangle-f-142 {
+    position: absolute;
+    width: 806px;
+    height: 6px;
+    top: 27px;
+    left: 0;
+    background: rgba(29, 93, 155, 0.4);
+    z-index: 46;
+  }
+  .rectangle-10-142 {
+    position: absolute;
+    width: 797px;
+    height: 6px;
+    top: 27px;
+    left: 1025px;
+    background: rgba(29, 93, 155, 0.4);
+    z-index: 47;
+  }
+  .exhausted-pet-care-142 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    width: 1590px;
+    height: 114px;
+    margin: 46px 0 0 116px;
+    color: #1d5d9b;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 37.5px;
+    text-align: center;
+    text-transform: capitalize;
+    z-index: 61;
+  }
+  .petstore-appointment-142 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    width: 1580px;
+    height: 56px;
+    margin: 46px 0 0 124px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.125px;
+    text-align: center;
+    text-transform: capitalize;
+    z-index: 62;
+  }
+  .flex-row-c-142 {
+    position: relative;
+    width: 1719px;
+    height: 488px;
+    margin: 75px 0 0 78px;
+    z-index: 74;
+  }
+  .pet-grooming-service-142 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: absolute;
+    width: 395px;
+    height: 47px;
+    top: 0;
+    left: 172px;
+    color: #1d5d9b;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 46.875px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 71;
+  }
+  .image-142 {
+    position: absolute;
+    width: 907px;
+    height: 488px;
+    top: 0;
+    left: 812px;
+    background: url(../assets/images/27ab825e-4004-4a55-b52b-62672bb786c9.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 72;
+    border-radius: 20px;
+  }
+  .object-142 {
+    position: relative;
+    width: 125px;
+    height: 125px;
+    margin: 244px 0 0 747px;
+    z-index: 16;
+    overflow: hidden;
+  }
+  .grooming-benefits-142 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: absolute;
+    width: 776px;
+    height: 196px;
+    top: 93px;
+    left: 0;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.125px;
+    text-align: left;
+    text-transform: capitalize;
+    z-index: 73;
+  }
+  .dog-cat-bath-142 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: absolute;
+    height: 28px;
+    top: 326px;
+    left: 63px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 70;
+  }
+  .blow-dry-brush-142 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: absolute;
+    height: 28px;
+    top: 379px;
+    left: 63px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 74;
+  }
+  .ear-drying-142 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: absolute;
+    height: 28px;
+    top: 432px;
+    left: 63px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 69;
+  }
+  .ear-cleaning-142 {
+    display: block;
+    position: relative;
+    height: 28px;
+    margin: -3px 0 0 141px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 68;
+  }
+  .gland-expression-142 {
+    display: block;
+    position: relative;
+    height: 28px;
+    margin: 25px 0 0 142px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 67;
+  }
+  .nail-trimming-142 {
+    display: block;
+    position: relative;
+    height: 28px;
+    margin: 25px 0 0 142px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 66;
+  }
+  .flea-check-142 {
+    display: block;
+    position: relative;
+    height: 28px;
+    margin: 25px 0 0 142px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 65;
+  }
+  .skin-check-142 {
+    display: block;
+    position: relative;
+    height: 28px;
+    margin: 37px 0 0 78px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 64;
+  }
+  .vector-11-142 {
+    position: relative;
+    width: 11.5px;
+    height: 16.947px;
+    margin: -3.566px 0 0 1770.25px;
+    background: url(../assets/images/eeeab13f-91e1-4d01-bbb2-7a80789ac8b0.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 22;
+  }
+  .price-list-142 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    width: 500px;
+    height: 47px;
+    margin: 85.619px 0 0 661px;
+    color: #1d5d9b;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 46.875px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 82;
+  }
+  .flex-row-bd-142 {
+    position: relative;
+    width: 1367px;
+    height: 355px;
+    margin: 66px 0 0 74px;
+    z-index: 90;
+  }
+  .image-12-142 {
+    position: absolute;
+    width: 318px;
+    height: 332px;
+    top: 0;
+    left: 0;
+    background: url(../assets/images/f5457de2-37fb-46dd-a389-68e9eb99ae61.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 85;
+    border-radius: 10px;
+  }
+  .vector-13-142 {
+    position: relative;
+    width: 18px;
+    height: 13.903px;
+    margin: 103.398px 0 0 32px;
+    background: url(../assets/images/3beaddf2-5223-41dd-92b5-2f47cd8db837.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 18;
+  }
+  .image-14-142 {
+    position: absolute;
+    width: 465px;
+    height: 332px;
+    top: 0;
+    left: 363px;
+    background: url(../assets/images/3085e9ec-148b-4135-9423-0a9e41ecb590.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 87;
+    border-radius: 10px;
+  }
+  .bang-gia-142 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: absolute;
+    width: 162px;
+    height: 47px;
+    top: 0;
+    left: 1158px;
+    color: #1d5d9b;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 46.875px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 83;
+  }
+  .gia-tam-cho-meo-duoi-kg-142 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: absolute;
+    width: 487px;
+    height: 47px;
+    top: 93px;
+    left: 878px;
+    color: #1d5d9b;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 46.875px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 76;
+  }
+  .price-range-142 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: absolute;
+    width: 294px;
+    height: 38px;
+    top: 174px;
+    left: 904px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 37.5px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 89;
+  }
+  .gia-tam-cho-meo-kg-kg-142 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: absolute;
+    width: 492px;
+    height: 47px;
+    top: 236px;
+    left: 875px;
+    color: #1d5d9b;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 46.875px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 77;
+  }
+  .price-range-15-142 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: absolute;
+    width: 294px;
+    height: 38px;
+    top: 317px;
+    left: 904px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 37.5px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 90;
+  }
+  .flex-row-a-142 {
+    position: relative;
+    width: 1393px;
+    height: 389px;
+    margin: 27px 0 0 74px;
+    z-index: 92;
+  }
+  .image-16-142 {
+    position: absolute;
+    width: 464px;
+    height: 389px;
+    top: 0;
+    left: 0;
+    background: url(../assets/images/aeae56e3-68d6-4f77-ba61-575dd53e6f85.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 88;
+    border-radius: 10px;
+  }
+  .vector-17-142 {
+    position: relative;
+    width: 18px;
+    height: 13.903px;
+    margin: 230.387px 0 0 32px;
+    background: url(../assets/images/539cce67-280a-42a5-8cf1-fcb86b06a6fb.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 20;
+  }
+  .image-18-142 {
+    position: absolute;
+    width: 330px;
+    height: 389px;
+    top: 0;
+    left: 498px;
+    background: url(../assets/images/4e85f389-d0ad-4b94-86ce-e2c21164f891.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 86;
+    border-radius: 10px;
+  }
+  .gia-tam-cho-meo-kg-kg-19-142 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: absolute;
+    width: 515px;
+    height: 47px;
+    top: 6px;
+    left: 878px;
+    color: #1d5d9b;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 46.875px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 78;
+  }
+  .price-range-1a-142 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: absolute;
+    width: 312px;
+    height: 38px;
+    top: 86px;
+    left: 904px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 37.5px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 91;
+  }
+  .gia-tam-cho-kg-kg-142 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: absolute;
+    width: 448px;
+    height: 47px;
+    top: 160px;
+    left: 875px;
+    color: #1d5d9b;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 46.875px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 79;
+  }
+  .price-range-1b-142 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: absolute;
+    width: 330px;
+    height: 38px;
+    top: 240px;
+    left: 904px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 37.5px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 92;
+  }
+  .gia-tam-cho-kg-kg-1c-142 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: absolute;
+    width: 448px;
+    height: 47px;
+    top: 313px;
+    left: 875px;
+    color: #1d5d9b;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 46.875px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 80;
+  }
+  .price-range-1d-142 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    width: 330px;
+    height: 38px;
+    margin: 4px 0 0 978px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 37.5px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 93;
+  }
+  .gia-tam-cho-tren-kg-142 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    width: 416px;
+    height: 47px;
+    margin: 35px 0 0 952px;
+    color: #1d5d9b;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 46.875px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 81;
+  }
+  .price-range-1e-142 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    width: 303px;
+    height: 38px;
+    margin: 33px 0 0 978px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 37.5px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 94;
+  }
+  .rectangle-1f-142 {
+    position: relative;
+    width: 721px;
+    height: 100px;
+    margin: 91px 0 0 551px;
+    background: #1d5d9b;
+    z-index: 53;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+  .lien-he-lich-tiem-ngay-cho-petstore-chung-toi-142 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: absolute;
+    height: 38px;
+    top: 14px;
+    left: 15px;
+    color: #ffffff;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 37.5px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 50;
+  }
+  .lien-he-lich-142 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: absolute;
+    height: 38px;
+    top: 14px;
+    left: 15px;
+    color: #ffffff;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 37.5px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 52;
+  }
+  .hotline-142 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: absolute;
+    height: 38px;
+    top: 30%;
+    left: 35%;
+    color: #ffffff;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 37.5px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 51;
+  }
+  .hotline-20-142 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: absolute;
+    height: 38px;
+    top: 49px;
+    left: 158px;
+    color: #ffffff;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 37.5px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 53;
+  }
+  .luu-y-tam-142 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    width: 1048px;
+    height: 47px;
+    margin: 120px 0 0 387px;
+    color: #1d5d9b;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 46.875px;
+    text-align: center;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 102;
+  }
+  .flex-row-b-142 {
+    position: relative;
+    width: 1673px;
+    height: 916px;
+    margin: 80px 0 0 58px;
+    z-index: 104;
+  }
+  .image-21-142 {
+    position: absolute;
+    width: 820px;
+    height: 780px;
+    top: 0;
+    left: 853px;
+    background: url(../assets/images/423e6851-3c1e-4673-845e-2c7173ded2a8.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 103;
+    border-radius: 70px;
+  }
+  .mang-dao-day-142 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: absolute;
+    height: 38px;
+    top: 40px;
+    left: 0;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 37.5px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 104;
+  }
+  .tiem-phong-day-du-142 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: absolute;
+    width: 795px;
+    height: 76px;
+    top: 110px;
+    left: 0;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 37.5px;
+    text-align: left;
+    text-transform: capitalize;
+    z-index: 101;
+  }
+  .an-uong-truoc-tam-142 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: absolute;
+    width: 794px;
+    height: 76px;
+    top: 218px;
+    left: 0;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 37.5px;
+    text-align: left;
+    text-transform: capitalize;
+    z-index: 100;
+  }
+  .an-uong-truoc-tam-22-142 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: absolute;
+    width: 795px;
+    height: 76px;
+    top: 326px;
+    left: 0;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 37.5px;
+    text-align: left;
+    text-transform: capitalize;
+    z-index: 99;
+  }
+  .dau-hieu-benh-142 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: absolute;
+    width: 747px;
+    height: 152px;
+    top: 434px;
+    left: 0;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 37.5px;
+    text-align: left;
+    text-transform: capitalize;
+    z-index: 98;
+  }
+  .thoi-gian-tam-142 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: absolute;
+    width: 786px;
+    height: 76px;
+    top: 618px;
+    left: 8px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 37.5px;
+    text-align: left;
+    text-transform: capitalize;
+    z-index: 97;
+  }
+  .don-ve-trong-ngay-142 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: absolute;
+    width: 739px;
+    height: 190px;
+    top: 726px;
+    left: 8px;
+    color: #000000;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 37.5px;
+    text-align: left;
+    text-transform: capitalize;
+    z-index: 96;
+  }
+  .rectangle-23-142 {
+    position: relative;
+    width: 721px;
+    height: 100px;
+    margin: 84px 0 0 551px;
+    background: #1d5d9b;
+    z-index: 59;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+  .lien-he-lich-24-142 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: absolute;
+    height: 38px;
+    top: 14px;
+    left: 15px;
+    color: #ffffff;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 37.5px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 56;
+  }
+  .lien-he-lich-25-142 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: absolute;
+    height: 38px;
+    top: 14px;
+    left: 15px;
+    color: #ffffff;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 37.5px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 58;
+  }
+  .hotline-26-142 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: absolute;
+    height: 38px;
+    top: 49px;
+    left: 158px;
+    color: #ffffff;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 37.5px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 57;
+  }
+  .hotline-27-142 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: absolute;
+    height: 38px;
+    top: 49px;
+    left: 158px;
+    color: #ffffff;
+    font-family: Roboto, var(--default-font-family);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 37.5px;
+    text-align: left;
+    text-transform: capitalize;
+    white-space: nowrap;
+    z-index: 59;
+  }
+  .inner-plugin-iframe-142 {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: 1118px;
+    left: 5189.5px;
+    z-index: 23;
+    overflow: hidden;
+  }
+  .inner-plugin-iframe-28-142 {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: 1118px;
+    left: 5285.5px;
+    z-index: 24;
+    overflow: hidden;
+  }
+  
