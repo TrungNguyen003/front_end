@@ -153,7 +153,11 @@ const ProductDetails = ({
   }
 
   if (!product) {
-    return <div style={{ textAlign: "center", marginTop: "50px" }}>Không tìm thấy sản phẩm.</div>;
+    return (
+      <div style={{ textAlign: "center", marginTop: "50px" }}>
+        Không tìm thấy sản phẩm.
+      </div>
+    );
   }
 
   return (
@@ -168,7 +172,9 @@ const ProductDetails = ({
         <div className="flex-column-aa-111">
           <div className="rectangle-7-111">
             {/* <span className="custom-page-111"></span> */}
-            <span className="home-111"><Link to="/">Trang chủ/ </Link> {product.name}</span>
+            <span className="home-111">
+              <Link to="/">Trang chủ/ </Link> {product.name}
+            </span>
           </div>
           <div className="rectangle-8-111">
             <div className="flex-column-e-111">
@@ -177,11 +183,15 @@ const ProductDetails = ({
                 <span className="store-b-111">Store</span>
               </div>
               <button className="rectangle-c-111">
-                <span className="chat-now-111">chat ngay</span>
+                <Link to="https://www.facebook.com/profile.php?id=100030327343731">
+                  <span className="chat-now-111">
+                    Liên hệ &nbsp; <i class="fa-solid fa-phone-flip"></i>
+                  </span>
+                </Link>
               </button>
             </div>
             <span className="contact-phone-number-111">
-              Số điện thoại liên lạc: 0336343299
+              {/* Số điện thoại liên lạc: 0336343299 */}
             </span>
           </div>
           <div className="rectangle-d-111"></div>

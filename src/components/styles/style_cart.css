@@ -1,5 +1,6 @@
 .main-container-1 {
   overflow: hidden;
+  cursor: url(Dog.png), auto;
 }
 
 .main-container-1,

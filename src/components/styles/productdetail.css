@@ -7,6 +7,7 @@
   
   .main-container-111 {
     overflow: hidden;
+    cursor: url(Dog.png), auto;
   }
   
   .main-container-111,
@@ -432,7 +433,6 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    width: 140px;
     height: 38px;
     top: 12px;
     left: 10%;
@@ -478,7 +478,6 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    width: 354px;
     height: 38px;
     margin: 15px 0 0 50px;
     color: #1d5d9b;

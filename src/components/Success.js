@@ -115,6 +115,9 @@ const Success = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
           <p>
             <strong>Email:</strong> {orderDetails.order.email}
           </p>
+          <p>
+            <strong>Điện thoại:</strong> {orderDetails.order.phone}
+          </p>
 
           <h5 className="mt-4">Sản phẩm đã mua:</h5>
           <table className="">
