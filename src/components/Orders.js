@@ -385,7 +385,7 @@ const Orders = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
                       className="rectangle-3-117"
                       onClick={() => handlePayment(orderDetails._id)}
                     >
-                      <span className="cancel-order-117">Mua ngay</span>
+                      <span className="cancel-order-117">Thanh Toán</span>
                     </button>
                   ) : orderDetails.status === "chưa giải quyết" ||
                     orderDetails.status === "đang xử lý" ||

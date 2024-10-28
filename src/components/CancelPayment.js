@@ -3,8 +3,8 @@ import { useNavigate, useLocation } from "react-router-dom";
 import axios from "axios";
 import Header from "./layout/Header";
 import Modal from "react-modal";
-import { toast, ToastContainer } from "react-toastify"; // Nhập toast từ react-toastify
-import "react-toastify/dist/ReactToastify.css"; // Nhập stylesheet cho Toastify
+import { toast, ToastContainer } from "react-toastify"; 
+import "react-toastify/dist/ReactToastify.css"; 
 
 Modal.setAppElement("#root");
 
@@ -85,18 +85,20 @@ const CancelPayment = ({
         setIsAuthenticated={setIsAuthenticated}
         setUser={setUser}
       />
-      <div style={{ textAlign: "center", marginTop: "50px" }}>
+      <div className="text-center mt-5">
         <h1>Đơn hàng đã hủy</h1>
         <p>Đơn hàng của bạn đã được hủy thành công.</p>
-        <button onClick={() => navigate("/cart")}>Quay lại giỏ hàng</button>
+        <button className="btn btn-primary" onClick={() => navigate("/cart")}>
+          Quay lại giỏ hàng
+        </button>
       </div>
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={handleCloseModal}
-        contentLabel="Order Details"
+        contentLabel="Chi tiết hủy thanh toán"
         style={{
           overlay: {
-            backgroundColor: "rgba(0, 0, 0, 0.75)", // Màu nền khi modal mở
+            backgroundColor: "rgba(0, 0, 0, 0.75)",
           },
           content: {
             top: "50%",
@@ -110,64 +112,72 @@ const CancelPayment = ({
             backgroundColor: "#fff",
             boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
             width: "80%",
-            maxWidth: "800px", // Tăng kích thước tối đa của modal
+            maxWidth: "800px",
           },
         }}
       >
-        <h2 style={{ color: "#FF0000" }}>Chi tiết hủy đơn hàng</h2>
+        <h2 className="text-danger">Chi tiết hủy thanh toán</h2>
         <button
           onClick={handleCloseModal}
-          style={{
-            float: "right",
-            background: "none",
-            border: "none",
-            fontSize: "24px",
-            cursor: "pointer",
-            color: "#FF0000",
-          }}
+          className="close"
+          style={{ float: "right", color: "#FF0000" }}
         >
           &#10005;
         </button>
-        <div>
+        <div className="modal-body">
+          <div className="invoice-header text-center mb-4">
+            <h2>Hóa đơn PetStore</h2>
+            <p>102 Tam Trinh, Hoàng Mai, Hà Nội, Việt Nam</p>
+            <p>Email: support@petstore.com | SĐT: 0123456789</p>
+          </div>
           <h3>Mã đơn hàng: {orderDetails.order._id}</h3>
           <h4>
             Ngày đặt hàng:{" "}
             {new Date(orderDetails.order.orderDate).toLocaleString()}
           </h4>
-          <h4>Trạng thái:{orderDetails.order.status}</h4>
+          <h4>Trạng thái: {orderDetails.order.status}</h4>
           <h4>Phương thức thanh toán: {orderDetails.order.paymentMethod}</h4>
           <h4>Trạng thái thanh toán: {orderDetails.order.paymentStatus}</h4>
           <h4>Địa chỉ: {orderDetails.order.address}</h4>
           <h4>Email: {orderDetails.order.email}</h4>
+          <p>
+            <strong>Điện thoại:</strong> {orderDetails.order.phone}
+          </p>
+
           <h4>Mặt hàng:</h4>
-          <ul>
+          <ul className="list-group">
             {orderDetails.orderDetails.map((item) => (
-              <li key={item._id} style={{ marginBottom: "20px" }}>
-                {item.product.name} - Số lượng: {item.quantity} - Giá:
-                {new Intl.NumberFormat("vi-VN", {
-                  style: "currency",
-                  currency: "VND",
-                })
-                  .format(item.price)
-                  .replace("₫", "VND")}
+              <li key={item._id} className="list-group-item d-flex justify-content-between align-items-center">
                 <div>
-                  {item.product.image && (
-                    <div>
-                      <img
-                        src={`https://back-end-42ja.onrender.com/product_images/${item.product._id}/${item.product.image}`}
-                        alt={item.product.name}
-                        style={{
-                          width: "100px",
-                          height: "100px",
-                          margin: "5px",
-                        }}
-                      />
-                    </div>
-                  )}
+                  <strong>{item.product.name}</strong> - Số lượng: {item.quantity} - Giá:
+                  {new Intl.NumberFormat("vi-VN", {
+                    style: "currency",
+                    currency: "VND",
+                  })
+                    .format(item.price)
+                    .replace("₫", "VND")}
                 </div>
+                {item.product.image && (
+                  <img
+                    src={`https://back-end-42ja.onrender.com/product_images/${item.product._id}/${item.product.image}`}
+                    alt={item.product.name}
+                    style={{
+                      width: "50px",
+                      height: "50px",
+                      marginLeft: "10px",
+                    }}
+                  />
+                )}
               </li>
             ))}
           </ul>
+          <p className="text-end mt-3">
+            <strong>Chi phí vận chuyển: </strong>
+            {new Intl.NumberFormat("vi-VN", {
+              style: "currency",
+              currency: "VND",
+            }).format(orderDetails.order.shippingFee)}
+          </p>
           <h4>
             Tổng cộng:{" "}
             {new Intl.NumberFormat("vi-VN", {
@@ -177,7 +187,7 @@ const CancelPayment = ({
           </h4>
         </div>
       </Modal>
-      <ToastContainer /> {/* Thêm ToastContainer để hiển thị thông báo */}
+      <ToastContainer />
     </>
   );
 };
