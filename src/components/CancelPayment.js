@@ -86,8 +86,8 @@ const CancelPayment = ({
         setUser={setUser}
       />
       <div className="text-center mt-5">
-        <h1>Đơn hàng đã hủy</h1>
-        <p>Đơn hàng của bạn đã được hủy thành công.</p>
+        <h1>Đơn hàng đã hủy thanh toán</h1>
+        <p>Vui lòng thanh toán lại.</p>
         <button className="btn btn-primary" onClick={() => navigate("/cart")}>
           Quay lại giỏ hàng
         </button>
@@ -101,7 +101,7 @@ const CancelPayment = ({
             backgroundColor: "rgba(0, 0, 0, 0.75)",
           },
           content: {
-            top: "50%",
+            top: "55%",
             left: "50%",
             right: "auto",
             bottom: "auto",
