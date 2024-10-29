@@ -40,9 +40,9 @@ const Login = ({ setIsAuthenticated, setUser }) => {
         setIsAuthenticated(true);
         setUser(user); // Set the user state
         if (
-          role === "sales_staff_1" &&
-          role === "sales_staff_2" &&
-          role === "manager"
+          user.role === "sales_staff_1" &&
+          user.role === "sales_staff_2" &&
+          user.role === "manager"
         ) {
           toast.error("Tài khoản không được phép truy cập");
         } else {
