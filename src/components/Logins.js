@@ -40,9 +40,9 @@ const Login = ({ setIsAuthenticated, setUser }) => {
         setIsAuthenticated(true);
         setUser(user); // Set the user state
         if (
-          user.role === "sales_staff_1" &&
-          user.role === "sales_staff_2" &&
-          user.role === "manager"
+          role === "sales_staff_1" &&
+          role === "sales_staff_2" &&
+          role === "manager"
         ) {
           toast.error("Tài khoản không được phép truy cập");
         } else {
@@ -131,7 +131,7 @@ const Login = ({ setIsAuthenticated, setUser }) => {
               checked={rememberMe}
               onChange={(e) => setRememberMe(e.target.checked)}
             />
-            Remember
+            Ghi nhớ
           </label>
           <button className="rectangle-button-5" disabled={isLoading}>
             {isLoading ? (
