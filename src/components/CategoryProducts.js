@@ -81,7 +81,7 @@ const CategoryProducts = ({
   }
 
   if (products.length === 0) {
-    return <div style={{ textAlign: "center", marginTop: "50px" }}>Không tìm thấy sản phẩm nào trong danh mục này</div>;
+    return <div style={{ textAlign: "center", marginTop: "50px" }}>Không tìm thấy sản phẩm nào trong danh mục này 😕</div>;
   }
 
   return (

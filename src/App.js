@@ -81,7 +81,7 @@ function App() {
           path="/"
           element={
             user && user.role === "admin" ? (
-              <Navigate to="/admin/dashboard" />
+              <Navigate to="/login" />
             ) : (
               <AllProducts
                 isAuthenticated={isAuthenticated}

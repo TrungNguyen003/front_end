@@ -50,9 +50,18 @@ const Login = ({ setIsAuthenticated, setUser }) => {
         }
   
         if (role === "admin") {
-          setTimeout(() => navigate("/admin/dashboard"), 2000);
-        } else {
-          setTimeout(() => navigate("/"), 2000);
+          setTimeout(() => navigate("/"), 1000);
+        } else if(role === "sales_staff_1"){
+          setTimeout(() => navigate("/login"), 1000);
+          toast.error("Tài khoản không được phép truy cập");
+        }
+        else if(role === "sales_staff_2"){
+          setTimeout(() => navigate("/login"), 1000);
+          toast.error("Tài khoản không được phép truy cập");
+        }
+        else if(role === "manager"){
+          setTimeout(() => navigate("/login"), 1000);
+          toast.error("Tài khoản không được phép truy cập");
         }
       } else {
         toast.error("Đăng nhập thất bại. Vui lòng thử lại.");
