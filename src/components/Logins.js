@@ -35,12 +35,19 @@ const Login = ({ setIsAuthenticated, setUser }) => {
       localStorage.setItem("userId", userId);
       localStorage.setItem("authToken", token);
       localStorage.setItem("role", role);
-      
+
       if (res.data.msg === "Đăng nhập thành công") {
         setIsAuthenticated(true);
         setUser(user); // Set the user state
-        toast.success("Đăng nhập thành công. Đang chuyển hướng...");
-  
+        if (
+          role === "sales_staff_1" &&
+          role === "sales_staff_2" &&
+          role === "manager"
+        ) {
+          toast.error("Tài khoản không được phép truy cập");
+        } else {
+          toast.success("Đăng nhập thành công. Đang chuyển hướng...");
+        }
         if (rememberMe) {
           localStorage.setItem("rememberedGmail", gmail);
           localStorage.setItem("rememberedPassword", password);
@@ -48,18 +55,16 @@ const Login = ({ setIsAuthenticated, setUser }) => {
           localStorage.removeItem("rememberedGmail");
           localStorage.removeItem("rememberedPassword");
         }
-  
+
         if (role === "admin") {
           setTimeout(() => navigate("/"), 1000);
-        } else if(role === "sales_staff_1"){
+        } else if (role === "sales_staff_1") {
           setTimeout(() => navigate("/login"), 1000);
           toast.error("Tài khoản không được phép truy cập");
-        }
-        else if(role === "sales_staff_2"){
+        } else if (role === "sales_staff_2") {
           setTimeout(() => navigate("/login"), 1000);
           toast.error("Tài khoản không được phép truy cập");
-        }
-        else if(role === "manager"){
+        } else if (role === "manager") {
           setTimeout(() => navigate("/login"), 1000);
           toast.error("Tài khoản không được phép truy cập");
         }
@@ -94,8 +99,12 @@ const Login = ({ setIsAuthenticated, setUser }) => {
           <div className="vector-5-1" />
         </div>
         <button className="rectangle-5" />
-        <Link to="/"><span className="back-to-website-5">quay lại trang</span></Link>
-        <Link to="/register"><span className="register-5">Đăng ký</span></Link>
+        <Link to="/">
+          <span className="back-to-website-5">quay lại trang</span>
+        </Link>
+        <Link to="/register">
+          <span className="register-5">Đăng ký</span>
+        </Link>
         <span className="no-account-5">Bạn chưa có tài khoản?</span>
         <form onSubmit={handleSubmit}>
           <div className="rectangle-1-5" />
