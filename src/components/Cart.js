@@ -7,7 +7,7 @@ import "./assets/images/b8229832-a182-45cf-a63b-e15abc464082.png";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { ClipLoader } from "react-spinners"; 
-
+import Footer from "./layout/Footer";
 const Cart = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
   const [cart, setCart] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -28,7 +28,7 @@ const Cart = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
       }
       try {
         const response = await axios.get(
-          `https://back-end-42ja.onrender.com/cart/${userId}`,
+          `http://localhost:10000/cart/${userId}`,
           {
             headers: { Authorization: `Bearer ${authToken}` },
           }
@@ -60,7 +60,7 @@ const Cart = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
     setItemLoading((prev) => ({ ...prev, [itemId]: true }));
     try {
       const response = await axios.put(
-        `https://back-end-42ja.onrender.com/cart/${userId}/items/${itemId}`,
+        `http://localhost:10000/cart/${userId}/items/${itemId}`,
         { quantity },
         {
           headers: { Authorization: `Bearer ${authToken}` },
@@ -83,7 +83,7 @@ const Cart = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
     setItemLoading((prev) => ({ ...prev, [itemId]: true }));
     try {
       const response = await axios.post(
-        "https://back-end-42ja.onrender.com/cart/remove",
+        "http://localhost:10000/cart/remove",
         { productId: itemId },
         {
           headers: { Authorization: `Bearer ${authToken}` },
@@ -181,7 +181,7 @@ const Cart = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
               <div className="rectangle-21b">
                 {item.product.image && (
                   <img
-                    src={`https://back-end-42ja.onrender.com/product_images/${item.product._id}/${item.product.image}`}
+                    src={`http://localhost:10000/product_images/${item.product._id}/${item.product.image}`}
                     alt={item.product.name}
                     style={{ width: "120px", height: "120px" }}
                   />
@@ -247,6 +247,7 @@ const Cart = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
               Tổng: {formatCurrency(calculateSelectedTotal())}
             </span>
           </div>
+          <Footer />
         </div>
       )}
       <ToastContainer />

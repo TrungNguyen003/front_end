@@ -12,7 +12,7 @@ const MyBookings = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
     const fetchBookings = async () => {
       try {
         const response = await axios.get(
-          "https://back-end-42ja.onrender.com/spa/my-bookings"
+          "http://localhost:10000/spa/my-bookings"
         );
         setBookings(response.data);
       } catch (err) {

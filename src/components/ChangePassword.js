@@ -31,7 +31,7 @@ const ChangerPassword = ({
     }
 
     axios
-      .get("https://back-end-42ja.onrender.com/users/me", {
+      .get("http://localhost:10000/users/me", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -78,7 +78,7 @@ const ChangerPassword = ({
   
     axios
       .post(
-        "https://back-end-42ja.onrender.com/users/change-password",
+        "http://localhost:10000/users/change-password",
         { oldPassword, newPassword, confirmPassword },
         {
           headers: {

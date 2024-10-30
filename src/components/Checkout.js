@@ -33,7 +33,7 @@ const Checkout = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
       }
       try {
         const userResponse = await axios.get(
-          `https://back-end-42ja.onrender.com/users/${userId}`,
+          `http://localhost:10000/users/${userId}`,
           {
             headers: { Authorization: `Bearer ${authToken}` },
           }
@@ -85,7 +85,7 @@ const Checkout = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
 
     try {
       setCheckoutLoading(true);
-      let endpoint = "https://back-end-42ja.onrender.com/cart/checkout";
+      let endpoint = "http://localhost:10000/cart/checkout";
       if (selectedPaymentMethod === "COD") {
         endpoint += "/cod";
       } else if (selectedPaymentMethod === "VNPAY") {
@@ -170,7 +170,7 @@ const Checkout = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
                   <div className="div-rectangle-112">
                     {item.product.image && (
                       <img
-                        src={`https://back-end-42ja.onrender.com/product_images/${item.product._id}/${item.product.image}`}
+                        src={`http://localhost:10000/product_images/${item.product._id}/${item.product.image}`}
                         alt={item.product.name}
                         style={{ width: "100px", height: "100px" }}
                       />
@@ -379,7 +379,7 @@ export default Checkout;
         <td>
           {item.product.image && (
             <img
-              src={`https://back-end-42ja.onrender.com/product_images/${item.product._id}/${item.product.image}`}
+              src={`http://localhost:10000/product_images/${item.product._id}/${item.product.image}`}
               alt={item.product.name}
               style={{ width: "50px", height: "50px" }}
             />

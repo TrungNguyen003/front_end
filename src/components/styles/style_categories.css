@@ -9,13 +9,12 @@
   }
 
   .main-container-2 {
-    position: relative;
     margin: 0 auto;
     width: 1850px;
     font-size: 0px;
-    height: 6300px;
+    height: auto;
     background: #e0f4ff;
-    overflow: hidden;
+
   }
 
   .shop-for-cat-8 {

@@ -13,7 +13,7 @@ const Register = () => {
     password2: "",
     role: "customer", // Vai trò mặc định là "customer"
   });
-
+  const [showPassword, setShowPassword] = useState(false); 
   const [loading, setLoading] = useState(false); // Thêm state loading
   const navigate = useNavigate();
 
@@ -52,7 +52,7 @@ const Register = () => {
 
       try {
         const res = await axios.post(
-          "https://back-end-42ja.onrender.com/users/register",
+          "http://localhost:10000/users/register",
           newUser
         );
         toast.success(
@@ -121,7 +121,7 @@ const Register = () => {
           />
           <input
             className="rectangle-3-4"
-            type="password"
+            type={showPassword ? "text" : "password"}
             placeholder="Mật khẩu"
             name="password"
             value={password}
@@ -131,13 +131,19 @@ const Register = () => {
 
           <input
             className="rectangle-4-4"
-            type="password"
+            type={showPassword ? "text" : "password"}
             placeholder="Nhập lại mật khẩu"
             name="password2"
             value={password2}
             onChange={onChange}
             required
           />
+          <span
+              className="toggle-password-2"
+              onClick={() => setShowPassword(!showPassword)}
+            >
+              {showPassword ? "👁️" : "👁️‍🗨️"} 
+            </span>
           <span className="terms-conditions-4">Điều khoản & Điều kiện</span>
           <span className="agree-terms-4">Tôi đồng ý với</span>
           <div className="rectangle-5-4">

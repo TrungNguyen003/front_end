@@ -23,10 +23,11 @@
   }
   
   .Main-Header-2 {
-    position: relative;
+    position: sticky;
     width: 1850px;
     margin: 0 auto;
-    font-size: 0px;
+    top: 0;
+    font-size: 2px;
     background: #e0f4ff;
     z-index: 1000;
 

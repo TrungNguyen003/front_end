@@ -56,10 +56,6 @@ function Footer() {
         <span className="carriers">Carriers</span>
         <span className="help">help</span>
       </div>
-      <div className="flex-row-224">
-        <span className="sale-225">Sale</span>
-        <span className="litter-litter-box">litter & litter box</span>
-      </div>
     </div>
   );
 }

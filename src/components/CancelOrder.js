@@ -14,7 +14,7 @@ const CancelOrder = () => {
     const cancelOrder = async () => {
       if (orderId) {
         try {
-          const response = await axios.get(`https://back-end-42ja.onrender.com/orders/checkout/cancel?order_id=${orderId}`, {
+          const response = await axios.get(`http://localhost:10000/orders/checkout/cancel?order_id=${orderId}`, {
             headers: {
               'Content-Type': 'application/json',
             },

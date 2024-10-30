@@ -35,7 +35,7 @@ const CheckoutNow = ({
       }
       try {
         const userResponse = await axios.get(
-          `https://back-end-42ja.onrender.com/users/${userId}`,
+          `http://localhost:10000/users/${userId}`,
           {
             headers: { Authorization: `Bearer ${authToken}` },
           }
@@ -95,10 +95,10 @@ const CheckoutNow = ({
       const shippingFee = calculateShippingFee(selectedShippingMethod, address);
       const endpoint =
         selectedPaymentMethod === "COD"
-          ? "https://back-end-42ja.onrender.com/cart/checkout/buynow/cod"
+          ? "http://localhost:10000/cart/checkout/buynow/cod"
           : selectedPaymentMethod === "VNPAY"
-          ? "https://back-end-42ja.onrender.com/cart/checkout/vnpay/now"
-          : "https://back-end-42ja.onrender.com/cart/checkout/buynow/stripe";
+          ? "http://localhost:10000/cart/checkout/vnpay/now"
+          : "http://localhost:10000/cart/checkout/buynow/stripe";
   
       // Log the data that will be sent to the server
       const payload = {
@@ -179,7 +179,7 @@ const CheckoutNow = ({
                   <div className="div-rectangle-112">
                     {item.product.image && (
                       <img
-                        src={`https://back-end-42ja.onrender.com/product_images/${item.product._id}/${item.product.image}`}
+                        src={`http://localhost:10000/product_images/${item.product._id}/${item.product.image}`}
                         alt={item.product.name}
                         style={{ width: "100px", height: "100px" }}
                       />

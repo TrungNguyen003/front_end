@@ -25,7 +25,7 @@ const CategoryProducts = ({
     const fetchProducts = async () => {
       try {
         const response = await axios.get(
-          "https://back-end-42ja.onrender.com/products/category",
+          "http://localhost:10000/products/category",
           {
             params: { query: categoryName, page },
           }
@@ -110,7 +110,7 @@ const CategoryProducts = ({
                 <div
                   className="vn-ro-lwcoliizfkyhf-removebg-preview-2"
                   style={{
-                    backgroundImage: `url(https://back-end-42ja.onrender.com/product_images/${product._id}/${product.image})`,
+                    backgroundImage: `url(http://localhost:10000/product_images/${product._id}/${product.image})`,
                   }}
                 />
                 <div className="vector-b-2" />

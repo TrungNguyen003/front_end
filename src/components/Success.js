@@ -20,7 +20,7 @@ const Success = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
     const fetchOrderDetails = async () => {
       try {
         const response = await axios.get(
-          `https://back-end-42ja.onrender.com/orders/${orderId}`
+          `http://localhost:10000/orders/${orderId}`
         );
         console.log("Dữ liệu trả về từ API:", response.data);
 
@@ -83,7 +83,7 @@ const Success = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
 
       <Modal show={showModal} onHide={handleCloseModal} size="lg" centered>
         <Modal.Header closeButton>
-          <Modal.Title>Đặt hàng hóa đơn</Modal.Title>
+          <Modal.Title> Hóa đơn đặt hàng</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <div className="invoice-header text-center mb-4">
@@ -137,7 +137,7 @@ const Success = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
                   <td>
                     {item.product.image && (
                       <img
-                        src={`https://back-end-42ja.onrender.com/product_images/${item.product._id}/${item.product.image}`}
+                        src={`http://localhost:10000/product_images/${item.product._id}/${item.product.image}`}
                         alt={item.product.name}
                         style={{ width: "100px", height: "100px" }}
                       />

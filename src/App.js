@@ -40,6 +40,7 @@ import UserBookings from "./components/UserBookings";
 import PetCareServices from "./components/PetCareServices";
 import VaccinationService from "./components/VaccinationService";
 import BathService from "./components/BathService"; 
+import ListProducts from "./components/ListProducts";
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [user, setUser] = useState(null);
@@ -50,7 +51,7 @@ function App() {
     const checkAuth = async () => {
       try {
         const token = localStorage.getItem("authToken");
-        const res = await axios.get("https://back-end-42ja.onrender.com/users/check-auth", {
+        const res = await axios.get("http://localhost:10000/users/check-auth", {
           headers: { Authorization: `Bearer ${token}` },
           withCredentials: true,
         });
@@ -352,6 +353,19 @@ function App() {
               user={user}
               setIsAuthenticated={setIsAuthenticated}
               setUser={setUser}
+            />
+          }
+        />
+          <Route
+          path="/list"
+          element={
+            <ListProducts
+              isAuthenticated={isAuthenticated}
+              user={user}
+              setIsAuthenticated={setIsAuthenticated}
+              setUser={setUser}
+              cart={cart}
+              setCart={setCart}
             />
           }
         />

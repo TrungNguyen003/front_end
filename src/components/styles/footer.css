@@ -3,7 +3,6 @@
     width: 1614px;
     height: 189px;
     margin-top: 100px;
-    left: 175px;
     z-index: 635;
   }
   .categories-212 {
@@ -346,7 +345,6 @@
     width: 1477px;
     height: 151px;
     margin-top: 270px;
-    left: 74px;
     z-index: 637;
   }
   .brands-21c {
@@ -356,7 +354,7 @@
     position: absolute;
     height: 29px;
     top: 0;
-    left: 911px;
+    left: 811px;
     color: #1d5d9b;
     font-family: Roboto, var(--default-font-family);
     font-size: 24px;
@@ -374,7 +372,7 @@
     position: absolute;
     height: 24px;
     top: 7px;
-    left: 1376px;
+    left: 1276px;
     color: #1d5d9b;
     font-family: Roboto, var(--default-font-family);
     font-size: 20px;
@@ -427,7 +425,7 @@
     position: absolute;
     height: 29px;
     top: 22px;
-    left: 1153px;
+    left: 1053px;
     color: #1d5d9b;
     font-family: Roboto, var(--default-font-family);
     font-size: 24px;
@@ -445,7 +443,7 @@
     position: absolute;
     height: 24px;
     top: 31px;
-    left: 649px;
+    left: 549px;
     color: #1d5d9b;
     font-family: Roboto, var(--default-font-family);
     font-size: 20px;
@@ -463,7 +461,7 @@
     position: absolute;
     height: 24px;
     top: 47px;
-    left: 1375px;
+    left: 1275px;
     color: #1d5d9b;
     font-family: Roboto, var(--default-font-family);
     font-size: 20px;
@@ -481,7 +479,7 @@
     position: absolute;
     height: 24px;
     top: 67px;
-    left: 1153px;
+    left: 1053px;
     color: #1d5d9b;
     font-family: Roboto, var(--default-font-family);
     font-size: 20px;
@@ -499,7 +497,7 @@
     position: absolute;
     height: 29px;
     top: 69px;
-    left: 910px;
+    left: 810px;
     color: #1d5d9b;
     font-family: Roboto, var(--default-font-family);
     font-size: 24px;
@@ -517,7 +515,7 @@
     position: absolute;
     height: 24px;
     top: 71px;
-    left: 649px;
+    left: 549px;
     color: #1d5d9b;
     font-family: Roboto, var(--default-font-family);
     font-size: 20px;
@@ -535,7 +533,7 @@
     position: absolute;
     height: 24px;
     top: 87px;
-    left: 1375px;
+    left: 1275px;
     color: #1d5d9b;
     font-family: Roboto, var(--default-font-family);
     font-size: 20px;
@@ -553,7 +551,7 @@
     position: absolute;
     height: 24px;
     top: 107px;
-    left: 1153px;
+    left: 1053px;
     color: #1d5d9b;
     font-family: Roboto, var(--default-font-family);
     font-size: 20px;
@@ -571,7 +569,7 @@
     position: absolute;
     height: 24px;
     top: 111px;
-    left: 649px;
+    left: 549px;
     color: #1d5d9b;
     font-family: Roboto, var(--default-font-family);
     font-size: 20px;
@@ -589,7 +587,7 @@
     position: absolute;
     height: 24px;
     top: 127px;
-    left: 1375px;
+    left: 1275px;
     color: #1d5d9b;
     font-family: Roboto, var(--default-font-family);
     font-size: 20px;
@@ -605,7 +603,7 @@
     width: 311px;
     height: 37px;
     margin-top: 410px;
-    left: 722px;
+    left: 36.7%;
     z-index: 638;
   }
   .sale-225 {
@@ -648,9 +646,9 @@
 
  .rectangle-210 {
   position: relative;
-    width: 1900px;
+    width: 1850px;
     height: 48px;
-    margin: 400px 0 0 -170px;
+    margin: 400px 0 0 0px;
     background: #004156;
     z-index: 134;
  }

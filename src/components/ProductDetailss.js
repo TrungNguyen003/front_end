@@ -10,6 +10,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router-dom";
 import "./styles/productdetail.css";
 import { ClipLoader } from "react-spinners";
+import Footer from "./layout/Footer";
 const ProductDetails = ({
   isAuthenticated,
   user,
@@ -34,7 +35,7 @@ const ProductDetails = ({
     const fetchProduct = async () => {
       try {
         const response = await axios.get(
-          `https://back-end-42ja.onrender.com/product/${id}`
+          `http://localhost:10000/product/${id}`
         );
         console.log("Dữ liệu sản phẩm:", response.data.product); // Kiểm tra dữ liệu
         setProduct(response.data.product);
@@ -64,7 +65,7 @@ const ProductDetails = ({
     const fetchRandomProducts = async () => {
       try {
         const response = await axios.get(
-          "https://back-end-42ja.onrender.com/products/random"
+          "http://localhost:10000/products/random"
         );
         setRandomProducts(response.data.products);
       } catch (error) {
@@ -85,7 +86,7 @@ const ProductDetails = ({
       }
 
       const res = await axios.post(
-        "https://back-end-42ja.onrender.com/cart/add",
+        "http://localhost:10000/cart/add",
         { productId: product._id, quantity, selectedWeight },
         {
           headers: {
@@ -218,7 +219,7 @@ const ProductDetails = ({
                 <div
                   className="rectangle-e-111"
                   style={{
-                    backgroundImage: `url(https://back-end-42ja.onrender.com/product_images/${randomProduct._id}/${randomProduct.image})`,
+                    backgroundImage: `url(http://localhost:10000/product_images/${randomProduct._id}/${randomProduct.image})`,
                   }}
                   onClick={() =>
                     (window.location.href = `/product/${randomProduct._id}`)
@@ -242,13 +243,16 @@ const ProductDetails = ({
             ))}
           </div>
           <button className="rectangle-a7-111">
-            <span className="see-more-111">xem thêm</span>
+            <Link to="/list">
+              {" "}
+              <span className="see-more-111">xem thêm</span>
+            </Link>
           </button>
           <div className="rectangle-a8-111">
             <div className="flex-row-ba-111">
               {product.image && (
                 <img
-                  src={`https://back-end-42ja.onrender.com/product_images/${product._id}/${product.image}`}
+                  src={`http://localhost:10000/product_images/${product._id}/${product.image}`}
                   alt={product.title}
                   className="rectangle-a9-111"
                   onClick={() => {
@@ -367,7 +371,7 @@ const ProductDetails = ({
                     product.galleryImages.map((image, index) => (
                       <img
                         key={index}
-                        src={`https://back-end-42ja.onrender.com/product_images/${product._id}/gallery/${image}`}
+                        src={`http://localhost:10000/product_images/${product._id}/gallery/${image}`}
                         alt=""
                         style={{
                           height: "100px",
@@ -400,18 +404,19 @@ const ProductDetails = ({
           <span className="ingredients-111"></span>
         </div>
       </div>
+     
       {isOpen && (
         <Lightbox
           mainSrc={
             photoIndex === 0
-              ? `https://back-end-42ja.onrender.com/product_images/${product._id}/${product.image}`
-              : `https://back-end-42ja.onrender.com/product_images/${product._id}/gallery/${
+              ? `http://localhost:10000/product_images/${product._id}/${product.image}`
+              : `http://localhost:10000/product_images/${product._id}/gallery/${
                   product.galleryImages[photoIndex - 1]
                 }`
           }
           nextSrc={
             photoIndex === 0
-              ? `https://back-end-42ja.onrender.com/product_images/${product._id}/gallery/${product.galleryImages[0]}`
+              ? `http://localhost:10000/product_images/${product._id}/gallery/${product.galleryImages[0]}`
               : product.galleryImages[
                   (photoIndex + 1) % product.galleryImages.length
                 ]
@@ -447,7 +452,7 @@ export default ProductDetails;
 // <h2>{product.name}</h2>
 // {product.image && (
 //   <img
-//     src={`https://back-end-42ja.onrender.com/product_images/${product._id}/${product.image}`}
+//     src={`http://localhost:10000/product_images/${product._id}/${product.image}`}
 //     alt={product.title}
 //     className="product-image"
 //     onClick={() => {
@@ -519,7 +524,7 @@ export default ProductDetails;
 //     product.galleryImages.map((image, index) => (
 //       <img
 //         key={index}
-//         src={`https://back-end-42ja.onrender.com/product_images/${product._id}/gallery/${image}`}
+//         src={`http://localhost:10000/product_images/${product._id}/gallery/${image}`}
 //         alt=""
 //         style={{ height: "200px", margin: "10px", cursor: "pointer" }}
 //         onClick={() => {
@@ -550,18 +555,18 @@ export default ProductDetails;
 //   <Lightbox
 //     mainSrc={
 //       photoIndex === 0
-//         ? `https://back-end-42ja.onrender.com/product_images/${product._id}/${product.image}`
-//         : `https://back-end-42ja.onrender.com/product_images/${
+//         ? `http://localhost:10000/product_images/${product._id}/${product.image}`
+//         : `http://localhost:10000/product_images/${
 //             product._id
 //           }/gallery/${product.galleryImages[photoIndex - 1]}`
 //     }
 //     nextSrc={
 //       photoIndex === 0
-//         ? `https://back-end-42ja.onrender.com/product_images/${product._id}/gallery/${product.galleryImages[0]}`
+//         ? `http://localhost:10000/product_images/${product._id}/gallery/${product.galleryImages[0]}`
 //         : product.galleryImages[
 //             (photoIndex + 1) % product.galleryImages.length
 //           ]
-//         ? `https://back-end-42ja.onrender.com/product_images/${
+//         ? `http://localhost:10000/product_images/${
 //             product._id
 //           }/gallery/${
 //             product.galleryImages[
@@ -577,7 +582,7 @@ export default ProductDetails;
 //             (photoIndex - 1 + product.galleryImages.length) %
 //               product.galleryImages.length
 //           ]
-//         ? `https://back-end-42ja.onrender.com/product_images/${
+//         ? `http://localhost:10000/product_images/${
 //             product._id
 //           }/gallery/${
 //             product.galleryImages[

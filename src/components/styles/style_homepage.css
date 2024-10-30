@@ -5,6 +5,7 @@
     "Source Han Sans CN", sans-serif;
 }
 
+
 .main-container {
     overflow: auto;
     cursor: url(Dog.png), auto;
@@ -16,7 +17,7 @@
   }
 
   .main-container {
-    position: relative;
+    
     margin: 0 auto;
     width: 1850px;
     height: 6020px;
@@ -42,7 +43,19 @@
       no-repeat center;
     background-size: cover;
     z-index: 52;
+    animation: fadeInMove 0.8s ease-in-out;
   }
+
+  @keyframes fadeInMove {
+    0% {
+        opacity: 0;
+        transform: translateX(30px) scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
   
   .image-6 {
     position: absolute;
@@ -53,7 +66,21 @@
       no-repeat center;
     background-size: cover;
     z-index: 62;
+    animation: fadeInMove 0.8s ease-in-out;
   }
+
+
+  /* Định nghĩa animation */
+@keyframes fadeInMove {
+  0% {
+      opacity: 0;
+      transform: translateX(30px) scale(0.9);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+  }
+}
   
   .rectangle-7 {
     position: absolute;
@@ -125,7 +152,13 @@
     text-transform: capitalize;
     white-space: nowrap;
     z-index: 53;
+    animation: blink 1s step-start infinite;
   }
+  @keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
   .line {
     position: absolute;
     width: 469px;
@@ -145,7 +178,10 @@
     left: 5%;
     background: #004156;
     z-index: 57;
+   
   }
+
+ 
   .shop-now {
     display: flex;
     align-items: flex-end;
@@ -174,6 +210,7 @@
     left: 17%;
     z-index: 59;
     overflow: hidden;
+    animation: shake 5s ease-in-out infinite; 
   }
   .vector-a {
     position: relative;
@@ -254,6 +291,7 @@
     text-transform: capitalize;
     white-space: nowrap;
     z-index: 65;
+    animation: shake 5s ease-in-out infinite; 
   }
   .rectangle-f {
     position: absolute;
@@ -331,6 +369,7 @@
     text-transform: capitalize;
     white-space: nowrap;
     z-index: 46;
+    animation: shake 5s ease-in-out infinite; 
   }
   
   .image-14 {
@@ -343,7 +382,19 @@
       no-repeat center;
     background-size: cover;
     z-index: 68;
+    animation: fadeInMove 0.8s ease-in-out;
   }
+
+  @keyframes fadeInMove {
+    0% {
+        opacity: 0;
+        transform: translateX(30px) scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
   
   .top-categories {
     position: relative;
@@ -409,7 +460,14 @@
       no-repeat center;
     background-size: cover;
     z-index: 137;
+
   }
+
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
   .rectangle-16 {
     flex-shrink: 0;
     position: relative;
@@ -842,6 +900,7 @@
     text-transform: capitalize;
     white-space: nowrap;
     z-index: 148;
+    animation: blink 1s step-start infinite;
   }
   
   .image-28 {
@@ -1097,6 +1156,7 @@
       no-repeat center;
     background-size: 100% 100%;
     z-index: 575;
+    animation: shake 5s ease-in-out infinite;
   }
 
 
@@ -1180,6 +1240,7 @@
     left: 120px;
     z-index: 110;
     overflow: hidden;
+    animation: shake 5s ease-in-out infinite;
   }
   .vector-1e3 {
     position: relative;
@@ -1270,6 +1331,7 @@
     left: 560px;
     z-index: 114;
     overflow: hidden;
+    animation: shake 5s ease-in-out infinite;
   }
   .vector-1e7 {
     position: relative;
@@ -1514,6 +1576,7 @@
     left: 109px;
     z-index: 89;
     overflow: hidden;
+    animation: shake 5s ease-in-out infinite;
   }
   .vector-1f7 {
     position: relative;
@@ -1542,6 +1605,7 @@
     text-transform: capitalize;
     white-space: nowrap;
     z-index: 88;
+    
   }
   .rectangle-1f8 {
     position: absolute;
@@ -1585,6 +1649,7 @@
     left: 109px;
     z-index: 97;
     overflow: hidden;
+    animation: shake 5s ease-in-out infinite;
   }
   .vector-1fb {
     position: relative;
@@ -1710,6 +1775,7 @@
       no-repeat center;
     background-size: 100% 100%;
     z-index: 578;
+    animation: shake 5s ease-in-out infinite;
   }
 
   .recent-articles {

@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 import axios from "axios";
 import { useCart } from "./CartContext"; // Import context
+
 function Header({ isAuthenticated, user, setIsAuthenticated, setUser }) {
   const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState("");
@@ -12,7 +13,7 @@ function Header({ isAuthenticated, user, setIsAuthenticated, setUser }) {
 
   const handleLogout = async () => {
     try {
-      const res = await axios.get("https://back-end-42ja.onrender.com/users/logout", {
+      const res = await axios.get("http://localhost:10000/users/logout", {
         withCredentials: true,
       });
       if (res.status === 200) {
@@ -42,7 +43,7 @@ function Header({ isAuthenticated, user, setIsAuthenticated, setUser }) {
       if (searchQuery.length > 0) {
         try {
           const res = await axios.get(
-            "https://back-end-42ja.onrender.com/categories/suggestions",
+            "http://localhost:10000/categories/suggestions",
             {
               params: { query: searchQuery },
             }
@@ -63,7 +64,7 @@ function Header({ isAuthenticated, user, setIsAuthenticated, setUser }) {
     const fetchCartCount = async () => {
       if (isAuthenticated && user) {
         try {
-          const res = await axios.get(`https://back-end-42ja.onrender.com/cart/${user._id}`);
+          const res = await axios.get(`http://localhost:10000/cart/${user._id}`);
           updateCartCount(res.data.items.length);
         } catch (err) {
           console.error("Error fetching cart data:", err);

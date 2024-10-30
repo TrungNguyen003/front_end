@@ -482,3 +482,19 @@
     z-index: 31;
   }
   
+
+
+  
+  .group-input-3-5 {
+    padding-right: 30px; /* Đảm bảo khoảng trống cho icon */
+  }
+  
+  .toggle-password {
+    left: 93%;
+    position: absolute;
+    top: 54%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10000;
+  }
+

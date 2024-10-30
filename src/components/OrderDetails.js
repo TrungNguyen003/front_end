@@ -14,7 +14,7 @@ const OrderDetail = () => {
   useEffect(() => {
     const fetchOrderDetails = async () => {
       try {
-        const response = await axios.get(`https://back-end-42ja.onrender.com/orders/${orderId}`, {
+        const response = await axios.get(`http://localhost:10000/orders/${orderId}`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("authToken")}`,
           },
@@ -33,7 +33,7 @@ const OrderDetail = () => {
   const handleRefundRequest = async () => {
     try {
       const response = await axios.post(
-        `https://back-end-42ja.onrender.com/orders/request-refund`,
+        `http://localhost:10000/orders/request-refund`,
         { orderId, refundReason },
         {
           headers: {

@@ -2,18 +2,18 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate, Link } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css"; // Import CSS cho toastify
+import "react-toastify/dist/ReactToastify.css"; 
 import "./styles/login.css";
 
 const Login = ({ setIsAuthenticated, setUser }) => {
-  const [gmail, setGmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [rememberMe, setRememberMe] = useState(false); // State cho Remember Me
+  const [gmail, setGmail] = useState(""); 
+  const [password, setPassword] = useState(""); // State cho mật khẩu
+  const [rememberMe, setRememberMe] = useState(false); // State cho ghi nhớ
   const [isLoading, setIsLoading] = useState(false); // State cho Loaders
+  const [showPassword, setShowPassword] = useState(false); // State để hiển thị mật khẩu
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Tự động điền thông tin đăng nhập nếu có trong localStorage
     const savedGmail = localStorage.getItem("rememberedGmail");
     const savedPassword = localStorage.getItem("rememberedPassword");
     if (savedGmail && savedPassword) {
@@ -24,10 +24,10 @@ const Login = ({ setIsAuthenticated, setUser }) => {
   }, []);
 
   const handleLogin = async (gmail, password) => {
-    setIsLoading(true); // Bắt đầu loader khi bắt đầu quá trình đăng nhập
+    setIsLoading(true); 
     try {
       const res = await axios.post(
-        "https://back-end-42ja.onrender.com/users/login",
+        "http://localhost:10000/users/login",
         { gmail, password },
         { withCredentials: true }
       );
@@ -38,7 +38,7 @@ const Login = ({ setIsAuthenticated, setUser }) => {
 
       if (res.data.msg === "Đăng nhập thành công") {
         setIsAuthenticated(true);
-        setUser(user); // Set the user state  
+        setUser(user); 
         toast.success("Đăng nhập thành công. Đang chuyển hướng...");  
         if (rememberMe) {
           localStorage.setItem("rememberedGmail", gmail);
@@ -50,16 +50,10 @@ const Login = ({ setIsAuthenticated, setUser }) => {
 
         if (role === "admin") {
           setTimeout(() => navigate("/"), 1000);
-        } else if (role === "sales_staff_1") {
+        } else if (["sales_staff_1", "sales_staff_2", "manager"].includes(role)) {
           setTimeout(() => navigate("/login"), 1000);
           toast.error("Tài khoản không được phép truy cập");
-        } else if (role === "sales_staff_2") {
-          setTimeout(() => navigate("/login"), 1000);
-          toast.error("Tài khoản không được phép truy cập");
-        } else if (role === "manager") {
-          setTimeout(() => navigate("/login"), 1000);
-          toast.error("Tài khoản không được phép truy cập");
-        } else{
+        } else {
           setTimeout(() => navigate("/"), 1000);
         }
       } else {
@@ -75,7 +69,7 @@ const Login = ({ setIsAuthenticated, setUser }) => {
         toast.error("Đã xảy ra lỗi. Vui lòng thử lại.");
       }
     } finally {
-      setIsLoading(false); // Dừng loader sau khi hoàn thành
+      setIsLoading(false); 
     }
   };
 
@@ -111,14 +105,22 @@ const Login = ({ setIsAuthenticated, setUser }) => {
             required
           />
           <div className="rectangle-2-5" />
-          <input
-            className="group-input-3-5"
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
+          <div className="password-container">
+            <input
+              className="group-input-3-5"
+              type={showPassword ? "text" : "password"}
+              placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
+            <span
+              className="toggle-password"
+              onClick={() => setShowPassword(!showPassword)}
+            >
+              {showPassword ? "👁️" : "👁️‍🗨️"} 
+            </span>
+          </div>
           <label className="remember-me-5">
             <input
               type="checkbox"
@@ -129,7 +131,7 @@ const Login = ({ setIsAuthenticated, setUser }) => {
           </label>
           <button className="rectangle-button-5" disabled={isLoading}>
             {isLoading ? (
-              <span className="loader"></span> // Add a loader component or text
+              <span className="loader"></span> 
             ) : (
               <span className="login-span-5">Đăng nhập</span>
             )}

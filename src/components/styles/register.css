@@ -443,3 +443,12 @@ button {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+.toggle-password-2{
+  left: 74%;
+  position: absolute;
+  top: 54%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 10000;
+}

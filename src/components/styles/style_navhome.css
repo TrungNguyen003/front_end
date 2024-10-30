@@ -9,7 +9,8 @@
   }
   
   .main-container-1331  {
-    position: relative;
+    position: sticky;
+    top: 0;
     margin: 0 auto;
     width: auto;
     height: 3.2%;
