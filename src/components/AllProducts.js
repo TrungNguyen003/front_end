@@ -190,7 +190,7 @@ const AllProduct = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
           <Link to="/category/đồ chơi">
             <span className="toys">Đồ chơi</span>
           </Link>
-          <Link to="/category/bát đĩa">
+          <Link to="/category/bát">
             <span className="bowls-dishes">Bát & Đĩa</span>
           </Link>
           <Link to="/category/balo">
