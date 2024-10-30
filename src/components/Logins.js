@@ -38,16 +38,8 @@ const Login = ({ setIsAuthenticated, setUser }) => {
 
       if (res.data.msg === "Đăng nhập thành công") {
         setIsAuthenticated(true);
-        setUser(user); // Set the user state
-        if (
-          role === "sales_staff_1" &&
-          role === "sales_staff_2" &&
-          role === "manager"
-        ) {
-          toast.error("Tài khoản không được phép truy cập");
-        } else {
-          toast.success("Đăng nhập thành công. Đang chuyển hướng...");
-        }
+        setUser(user); // Set the user state  
+        toast.success("Đăng nhập thành công. Đang chuyển hướng...");  
         if (rememberMe) {
           localStorage.setItem("rememberedGmail", gmail);
           localStorage.setItem("rememberedPassword", password);
@@ -67,6 +59,8 @@ const Login = ({ setIsAuthenticated, setUser }) => {
         } else if (role === "manager") {
           setTimeout(() => navigate("/login"), 1000);
           toast.error("Tài khoản không được phép truy cập");
+        } else{
+          setTimeout(() => navigate("/"), 1000);
         }
       } else {
         toast.error("Đăng nhập thất bại. Vui lòng thử lại.");
