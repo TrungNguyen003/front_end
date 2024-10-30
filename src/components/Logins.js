@@ -27,7 +27,7 @@ const Login = ({ setIsAuthenticated, setUser }) => {
     setIsLoading(true); 
     try {
       const res = await axios.post(
-        "http://localhost:10000/users/login",
+        "https://back-end-42ja.onrender.com/users/login",
         { gmail, password },
         { withCredentials: true }
       );

@@ -16,7 +16,7 @@ const PaymentResult = () => {
       setMessage('Thanh toán thành công!');
 
       // Fetch order details
-      axios.get(`http://localhost:10000/orders/${orderId}`)
+      axios.get(`https://back-end-42ja.onrender.com/orders/${orderId}`)
         .then(response => {
           setOrderDetails(response.data);
         })

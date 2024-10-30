@@ -37,7 +37,7 @@ const EditProfile = ({
     }
 
     axios
-      .get("http://localhost:10000/users/me", {
+      .get("https://back-end-42ja.onrender.com/users/me", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -57,7 +57,7 @@ const EditProfile = ({
 
     // Fetch provinces
     axios
-      .get("http://localhost:10000/api/provinces")
+      .get("https://back-end-42ja.onrender.com/api/provinces")
       .then((response) => {
         setProvinces(response.data);
       })
@@ -96,7 +96,7 @@ const EditProfile = ({
     if (selectedProvince) {
       axios
         .get(
-          `http://localhost:10000/api/provinces/${selectedProvince}/districts`
+          `https://back-end-42ja.onrender.com/api/provinces/${selectedProvince}/districts`
         )
         .then((response) => {
           setDistricts(response.data);
@@ -114,7 +114,7 @@ const EditProfile = ({
   useEffect(() => {
     if (selectedDistrict) {
       axios
-        .get(`http://localhost:10000/api/districts/${selectedDistrict}/wards`)
+        .get(`https://back-end-42ja.onrender.com/api/districts/${selectedDistrict}/wards`)
         .then((response) => {
           setWards(response.data);
         })
@@ -145,7 +145,7 @@ const EditProfile = ({
 
     axios
       .post(
-        "http://localhost:10000/users/upload-avatar",
+        "https://back-end-42ja.onrender.com/users/upload-avatar",
         { avatar },
         {
           headers: {
@@ -179,7 +179,7 @@ const EditProfile = ({
     if (username !== user.username) {
       updates.push(
         axios.post(
-          "http://localhost:10000/users/update-username",
+          "https://back-end-42ja.onrender.com/users/update-username",
           { username },
           {
             headers: { Authorization: `Bearer ${token}` },
@@ -191,7 +191,7 @@ const EditProfile = ({
     if (fullAddress !== user.address) {
       updates.push(
         axios.post(
-          "http://localhost:10000/users/update-address",
+          "https://back-end-42ja.onrender.com/users/update-address",
           { address: fullAddress },
           {
             headers: { Authorization: `Bearer ${token}` },
@@ -203,7 +203,7 @@ const EditProfile = ({
     if (phone !== user.phone) {
       updates.push(
         axios.post(
-          "http://localhost:10000/users/update-phone",
+          "https://back-end-42ja.onrender.com/users/update-phone",
           { phone },
           {
             headers: { Authorization: `Bearer ${token}` },

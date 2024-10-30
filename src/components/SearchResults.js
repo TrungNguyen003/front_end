@@ -24,7 +24,7 @@ function SearchResults({ isAuthenticated, user, setIsAuthenticated, setUser }) {
       setIsLoading(true); // Bắt đầu tải dữ liệu
       try {
         const res = await axios.get(
-          `http://localhost:10000/products/searchh?query=${query}&page=${page}`
+          `https://back-end-42ja.onrender.com/products/searchh?query=${query}&page=${page}`
         );
         setProducts((prevProducts) => [...prevProducts, ...res.data.products]);
         setTotalPages(res.data.totalPages);
@@ -77,7 +77,7 @@ function SearchResults({ isAuthenticated, user, setIsAuthenticated, setUser }) {
                   <div
                     className="vn-ro-lwcoliizfkyhf-removebg-preview-3"
                     style={{
-                      backgroundImage: `url(http://localhost:10000/product_images/${product._id}/${product.image})`,
+                      backgroundImage: `url(https://back-end-42ja.onrender.com/product_images/${product._id}/${product.image})`,
                     }}
                   />
                   <div className="vector-b-3" />

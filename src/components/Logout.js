@@ -10,7 +10,7 @@ const Logout = ({ setIsAuthenticated }) => {
   const handleLogout = async () => {
     if (window.confirm("Are you sure you want to log out?")) { // Xác nhận trước khi đăng xuất
       try {
-        const res = await axios.get("http://localhost:10000/users/logout", { withCredentials: true });
+        const res = await axios.get("https://back-end-42ja.onrender.com/users/logout", { withCredentials: true });
         if (res.status === 200) {
           localStorage.removeItem("authToken"); // Xóa authToken từ localStorage
           setIsAuthenticated(false); // Cập nhật trạng thái xác thực

@@ -60,7 +60,7 @@ const Orders = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
 
       try {
         const response = await axios.get(
-          `http://localhost:10000/orders/user/${userId}`,
+          `https://back-end-42ja.onrender.com/orders/user/${userId}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -116,7 +116,7 @@ const Orders = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
   const handlePayment = async (orderId) => {
     try {
       const response = await axios.post(
-        "http://localhost:10000/cart/process-payment",
+        "https://back-end-42ja.onrender.com/cart/process-payment",
         { orderId }
       );
       window.location.href = response.data.checkoutUrl;
@@ -148,7 +148,7 @@ const Orders = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
 
     try {
       const response = await axios.post(
-        "http://localhost:10000/orders/request-refund",
+        "https://back-end-42ja.onrender.com/orders/request-refund",
         { orderId, refundReason }
       );
       toast.success("Yêu cầu hoàn tiền đã được gửi thành công");
@@ -160,7 +160,7 @@ const Orders = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
 
   const handleReceivedConfirmation = async (orderId) => {  
     try {
-      const response = await fetch(`http://localhost:10000/orders/orders/${orderId}/received`, {
+      const response = await fetch(`https://back-end-42ja.onrender.com/orders/orders/${orderId}/received`, {
         method: 'PUT',
         headers: {
           'Authorization': `Bearer ${authToken}`, // Đặt token vào header
@@ -313,7 +313,7 @@ const Orders = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
                         {order.items.map((item, index) => (
                           <img
                             key={index}
-                            src={`http://localhost:10000/product_images/${item.product._id}/${item.product.image}`}
+                            src={`https://back-end-42ja.onrender.com/product_images/${item.product._id}/${item.product.image}`}
                             alt={item.product.name}
                             className="product-image"
                             style={{
@@ -484,7 +484,7 @@ const Orders = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
                   {orderDetails.items.map((item) => (
                     <div key={item.product._id} className="product-item">
                       <img
-                        src={`http://localhost:10000/product_images/${item.product._id}/${item.product.image}`}
+                        src={`https://back-end-42ja.onrender.com/product_images/${item.product._id}/${item.product.image}`}
                         alt={item.product.name}
                         className="product-image"
                       />
@@ -632,7 +632,7 @@ export default Orders;
 //             {item.product.image && (
 //               <div>
 // <img
-//   src={`http://localhost:10000/product_images/${item.product._id}/${item.product.image}`}
+//   src={`https://back-end-42ja.onrender.com/product_images/${item.product._id}/${item.product.image}`}
 //   alt={item.product.name}
 //   style={{
 //     width: "100px",

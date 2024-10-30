@@ -51,7 +51,7 @@ function App() {
     const checkAuth = async () => {
       try {
         const token = localStorage.getItem("authToken");
-        const res = await axios.get("http://localhost:10000/users/check-auth", {
+        const res = await axios.get("https://back-end-42ja.onrender.com/users/check-auth", {
           headers: { Authorization: `Bearer ${token}` },
           withCredentials: true,
         });

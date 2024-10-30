@@ -28,7 +28,7 @@ const Cart = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
       }
       try {
         const response = await axios.get(
-          `http://localhost:10000/cart/${userId}`,
+          `https://back-end-42ja.onrender.com/cart/${userId}`,
           {
             headers: { Authorization: `Bearer ${authToken}` },
           }
@@ -60,7 +60,7 @@ const Cart = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
     setItemLoading((prev) => ({ ...prev, [itemId]: true }));
     try {
       const response = await axios.put(
-        `http://localhost:10000/cart/${userId}/items/${itemId}`,
+        `https://back-end-42ja.onrender.com/cart/${userId}/items/${itemId}`,
         { quantity },
         {
           headers: { Authorization: `Bearer ${authToken}` },
@@ -83,7 +83,7 @@ const Cart = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
     setItemLoading((prev) => ({ ...prev, [itemId]: true }));
     try {
       const response = await axios.post(
-        "http://localhost:10000/cart/remove",
+        "https://back-end-42ja.onrender.com/cart/remove",
         { productId: itemId },
         {
           headers: { Authorization: `Bearer ${authToken}` },
@@ -181,7 +181,7 @@ const Cart = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
               <div className="rectangle-21b">
                 {item.product.image && (
                   <img
-                    src={`http://localhost:10000/product_images/${item.product._id}/${item.product.image}`}
+                    src={`https://back-end-42ja.onrender.com/product_images/${item.product._id}/${item.product.image}`}
                     alt={item.product.name}
                     style={{ width: "120px", height: "120px" }}
                   />

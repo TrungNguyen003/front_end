@@ -19,7 +19,7 @@ const ListProducts = ({ isAuthenticated, user, setIsAuthenticated, setUser }) =>
     const fetchProducts = async () => {
       setLoading(true);
       try {
-        const response = await axios.get("http://localhost:10000/products/all", {
+        const response = await axios.get("https://back-end-42ja.onrender.com/products/all", {
           params: { page, limit: 10 }, // Gửi page và limit tới API
         });
 
@@ -82,7 +82,7 @@ const ListProducts = ({ isAuthenticated, user, setIsAuthenticated, setUser }) =>
                 <div
                   className="vn-ro-lwcoliizfkyhf-removebg-preview-2"
                   style={{
-                    backgroundImage: `url(http://localhost:10000/product_images/${product._id}/${product.image})`,
+                    backgroundImage: `url(https://back-end-42ja.onrender.com/product_images/${product._id}/${product.image})`,
                   }}
                 />
                 <span className="dollar-2">

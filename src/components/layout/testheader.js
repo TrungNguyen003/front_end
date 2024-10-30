@@ -15,7 +15,7 @@ function HeaderTest({ isAuthenticated, user, setIsAuthenticated, setUser }) {
 
   const handleLogout = async () => {
     try {
-      const res = await axios.get("http://localhost:10000/users/logout", {
+      const res = await axios.get("https://back-end-42ja.onrender.com/users/logout", {
         withCredentials: true,
       });
       if (res.status === 200) {
@@ -39,7 +39,7 @@ function HeaderTest({ isAuthenticated, user, setIsAuthenticated, setUser }) {
       if (searchQuery.length > 0) {
         try {
           const res = await axios.get(
-            "http://localhost:10000/categories/suggestions",
+            "https://back-end-42ja.onrender.com/categories/suggestions",
             {
               params: { query: searchQuery },
             }
@@ -60,7 +60,7 @@ function HeaderTest({ isAuthenticated, user, setIsAuthenticated, setUser }) {
     const fetchCartCount = async () => {
       if (isAuthenticated && user) {
         try {
-          const res = await axios.get(`http://localhost:10000/cart/${user._id}`);
+          const res = await axios.get(`https://back-end-42ja.onrender.com/cart/${user._id}`);
           setCartCount(res.data.items.length);
         } catch (err) {
           console.error("Error fetching cart data:", err);

@@ -52,7 +52,7 @@ const Register = () => {
 
       try {
         const res = await axios.post(
-          "http://localhost:10000/users/register",
+          "https://back-end-42ja.onrender.com/users/register",
           newUser
         );
         toast.success(

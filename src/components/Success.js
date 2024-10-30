@@ -20,7 +20,7 @@ const Success = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
     const fetchOrderDetails = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:10000/orders/${orderId}`
+          `https://back-end-42ja.onrender.com/orders/${orderId}`
         );
         console.log("Dữ liệu trả về từ API:", response.data);
 
@@ -137,7 +137,7 @@ const Success = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
                   <td>
                     {item.product.image && (
                       <img
-                        src={`http://localhost:10000/product_images/${item.product._id}/${item.product.image}`}
+                        src={`https://back-end-42ja.onrender.com/product_images/${item.product._id}/${item.product.image}`}
                         alt={item.product.name}
                         style={{ width: "100px", height: "100px" }}
                       />

@@ -26,7 +26,7 @@ const AllProduct = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
   useEffect(() => {
     // Fetch New & Trending Products
     axios
-      .get("http://localhost:10000/products", {
+      .get("https://back-end-42ja.onrender.com/products", {
         params: {
           category_id: "6710a70499ba2d30f429c06a", // ID của danh mục New & Trending
           limit: 5, // Số lượng sản phẩm muốn lấy
@@ -46,7 +46,7 @@ const AllProduct = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
 
     // Fetch Popular Items
     axios
-      .get("http://localhost:10000/products", {
+      .get("https://back-end-42ja.onrender.com/products", {
         params: {
           category_id: "6710b6a24cb6583204dd290a", // ID của danh mục Popular Items
           limit: 5, // Số lượng sản phẩm muốn lấy
@@ -65,7 +65,7 @@ const AllProduct = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
 
     // Fetch Lowest Prices
     axios
-      .get("http://localhost:10000/products", {
+      .get("https://back-end-42ja.onrender.com/products", {
         params: {
           category_id: "6710b6b54cb6583204dd290c", // ID của danh mục Lowest Prices
           limit: 5, // Số lượng sản phẩm muốn lấy
@@ -227,7 +227,7 @@ const AllProduct = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
                   <div
                     className="image-28"
                     style={{
-                      backgroundImage: `url(http://localhost:10000/product_images/${product._id}/${product.image})`,
+                      backgroundImage: `url(https://back-end-42ja.onrender.com/product_images/${product._id}/${product.image})`,
                     }}
                   />
                   <div className="flex-row-ce">
@@ -291,7 +291,7 @@ const AllProduct = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
                   <div
                     className="image-28"
                     style={{
-                      backgroundImage: `url(http://localhost:10000/product_images/${product._id}/${product.image})`,
+                      backgroundImage: `url(https://back-end-42ja.onrender.com/product_images/${product._id}/${product.image})`,
                     }}
                   />
                   <div className="flex-row-ce">
@@ -353,7 +353,7 @@ const AllProduct = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
                   <div
                     className="image-28"
                     style={{
-                      backgroundImage: `url(http://localhost:10000/product_images/${product._id}/${product.image})`,
+                      backgroundImage: `url(https://back-end-42ja.onrender.com/product_images/${product._id}/${product.image})`,
                     }}
                   />
                   <div className="flex-row-ce">
@@ -550,7 +550,7 @@ export default AllProduct;
           <p>Giá: {product.price.$numberDecimal} VND</p>
           {product.image && (
             <img
-              src={`http://localhost:10000/product_images/${product._id}/${product.image}`}
+              src={`https://back-end-42ja.onrender.com/product_images/${product._id}/${product.image}`}
               alt={product.name}
               className="product-image"
             />

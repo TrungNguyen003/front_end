@@ -49,7 +49,7 @@ const PetSpaBookingForm = ({
 
     try {
       const response = await axios.post(
-        "http://localhost:10000/spa/bookings",
+        "https://back-end-42ja.onrender.com/spa/bookings",
         bookingData
       );
       toast.success("Đặt phòng được tạo thành công!"); // Show success toast
