@@ -83,9 +83,8 @@ const Orders = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
         sortedOrders.forEach((order) => {
           if (order.status === "chưa giải quyết") counts.pending += 1;
           if (order.status === "chưa thanh toán") counts.unpaid += 1;
-          if (order.status === "đang vận chuyển")
-            counts.shipped += 1;
-          if (order.paymentStatus === "trả trước") counts.paid += 1;
+          if (order.status === "đang vận chuyển") counts.shipped += 1;
+          if (order.status === "trả trước") counts.paid += 1;
           if (order.status === "hoàn thành") counts.completed += 1;
         });
         setStatusCounts(counts);
@@ -261,18 +260,14 @@ const Orders = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
             <span className="unpaid-117">Đã trả trước</span>
             <div className="ellipse-e-117" />
           </div>
-          <div
-            onClick={() =>
-              handleStatusClick("Đơn vị vận chuyển lấy hàng thành công")
-            }
-          >
+          <div onClick={() => handleStatusClick("đang vận chuyển")}>
             <div className="ellipse-10-117" />
             <span className="shipped-117">Đang vận chuyển</span>
           </div>
           <div className="ellipse-f-117" />
 
           <div className="ellipse-11-117" />
-          <div onClick={() => handleStatusClick("đơn hàng đã hoàn thành")}>
+          <div onClick={() => handleStatusClick("hoàn thành")}>
             <div className="ellipse-12-117" />
             <span className="waiting-for-goods-117">Đơn đã hoàn thành</span>
           </div>
@@ -486,7 +481,7 @@ const Orders = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
                 {orderDetails.status === "yêu cầu hoàn trả" && (
                   <div className="flex-row-s-117">
                     <div className="delivery-time-estimate">
-                    <h6>Lý do hoàn trả: {orderDetails.refundReason}</h6>  
+                      <h6>Lý do hoàn trả: {orderDetails.refundReason}</h6>
                     </div>
                   </div>
                 )}
