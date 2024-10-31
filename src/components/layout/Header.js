@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
-
 import axios from "axios";
-import { useCart } from "./CartContext"; // Import context
+import { useCart } from "./CartContext";
 
 function Header({ isAuthenticated, user, setIsAuthenticated, setUser }) {
   const navigate = useNavigate();
@@ -10,6 +9,8 @@ function Header({ isAuthenticated, user, setIsAuthenticated, setUser }) {
   const [suggestions, setSuggestions] = useState([]);
   const { cartCount, updateCartCount } = useCart();
   const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  const searchRef = useRef(null);
 
   const handleLogout = async () => {
     try {
@@ -76,8 +77,17 @@ function Header({ isAuthenticated, user, setIsAuthenticated, setUser }) {
   }, [isAuthenticated, user]);
 
   useEffect(() => {
-    console.log("cartCount trong Header:", cartCount);
-  }, [cartCount]);
+    const handleClickOutside = (event) => {
+      if (searchRef.current && !searchRef.current.contains(event.target)) {
+        setSuggestions([]); // Đóng gợi ý khi click ra ngoài
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
@@ -85,80 +95,79 @@ function Header({ isAuthenticated, user, setIsAuthenticated, setUser }) {
 
   return (
     <>
-    <div className="Main-Header-2">
-      <span className="welcome-message">Chào mừng đến với cửa hàng !!!</span>
-      <div className="rectangle">
-        <div className="logo" />
-        <div className="pets-store">
-          <Link to="/">
-            <span className="pets">Pets</span>
-            <span className="store">Store</span>
-          </Link>
-        </div>
-        <div className="rectangle-1">
-          <input
-            type="text"
-            placeholder="Tìm kiếm"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            onKeyDown={handleKeyDown} // Add this line
-          />
-          <button className="search-button" onClick={handleSearch}>
-            <i className="fa fa-search"></i>
-          </button>
-          {suggestions.length > 0 && (
-            <ul className="suggestions">
-              {suggestions.map((suggestion) => (
-                <li
-                  key={suggestion._id}
-                  onClick={() => setSearchQuery(suggestion.name)}
-                >
-                  {suggestion.name}
-                </li>
-              ))}
-            </ul>
-          )}
-        </div>
-        <div className="ellipse" />
-        <span className="number">{cartCount}</span>
-        <div className="shopping-cart">
-          <Link to="/cart">
-            <div className="shopping-cart-3"></div>
-          </Link>
-          {cartCount > 0 && <span className="cart-count">{cartCount}</span>}
-        </div>
+      <div className="Main-Header-2">
+        <span className="welcome-message">Chào mừng đến với cửa hàng !!!</span>
+        <div className="rectangle">
+          <div className="logo" />
+          <div className="pets-store">
+            <Link to="/">
+              <span className="pets">Pets</span>
+              <span className="store">Store</span>
+            </Link>
+          </div>
+          <div className="rectangle-1" ref={searchRef}>
+            <input
+              type="text"
+              placeholder="Tìm kiếm"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              onKeyDown={handleKeyDown}
+            />
+            <button className="search-button" onClick={handleSearch}>
+              <i className="fa fa-search"></i>
+            </button>
+            {suggestions.length > 0 && (
+              <ul className="suggestions">
+                {suggestions.map((suggestion) => (
+                  <li
+                    key={suggestion._id}
+                    onClick={() => setSearchQuery(suggestion.name)}
+                  >
+                    {suggestion.name}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+          <div className="ellipse" />
+          <span className="number">{cartCount}</span>
+          <div className="shopping-cart">
+            <Link to="/cart">
+              <div className="shopping-cart-3"></div>
+            </Link>
+            {cartCount > 0 && <span className="cart-count">{cartCount}</span>}
+          </div>
 
-        <div className="user-profile">
-          {isAuthenticated ? (
-            <div className="user-dropdown">
-              <button onClick={toggleDropdown}>
-                {user && (
-                  <span>
-                    <img src={user.avatar} alt="User Avatar" />
-                    {user.username}
-                  </span>
+          <div className="user-profile">
+            {isAuthenticated ? (
+              <div className="user-dropdown">
+                <button onClick={toggleDropdown}>
+                  {user && (
+                    <span>
+                      <img src={user.avatar} alt="User Avatar" />
+                      {user.username}
+                    </span>
+                  )}
+                </button>
+                {dropdownOpen && (
+                  <div className="dropdown-menu-1">
+                    <Link to="/orders">Đơn hàng</Link>
+                    <Link to="/account">Tài khoản</Link>
+                    <Link to="/Spa_Booking">Đặt lịch spa</Link>
+                    <Link to="/User_Booking">Lịch sử đặt lịch </Link>
+                    <button onClick={handleLogout}>Đăng xuất</button>
+                  </div>
                 )}
-              </button>
-              {dropdownOpen && (
-                <div className="dropdown-menu-1">
-                  <Link to="/orders">Đơn hàng</Link>
-                  <Link to="/account">Tài khoản</Link>
-                  <Link to="/Spa_Booking">Đặt lịch spa</Link>
-                  <Link to="/User_Booking">Lịch sử đặt lịch </Link>
-                  <button onClick={handleLogout}>Đăng xuất</button>
-                </div>
-              )}
-            </div>
-          ) : (
-            <>
-              <Link to="/login">Đăng nhập</Link>
-              <Link to="/register">Đăng ký</Link>
-            </>
-          )}
+              </div>
+            ) : (
+              <>
+                <Link to="/login">Đăng nhập</Link>
+                <Link to="/register">Đăng ký</Link>
+              </>
+            )}
+          </div>
         </div>
       </div>
-
-    </div>
     </>
   );
 }
