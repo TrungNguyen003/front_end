@@ -38,7 +38,7 @@ const UserAccount = ({
     }
 
     axios
-      .get("https://back-end-42ja.onrender.com/users/me", {
+      .get("http://localhost:10000/users/me", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -58,7 +58,7 @@ const UserAccount = ({
 
     // Fetch provinces
     axios
-      .get("https://back-end-42ja.onrender.com/api/provinces")
+      .get("http://localhost:10000/api/provinces")
       .then((response) => {
         setProvinces(response.data);
       })
@@ -98,7 +98,7 @@ const UserAccount = ({
     if (selectedProvince) {
       axios
         .get(
-          `https://back-end-42ja.onrender.com/api/provinces/${selectedProvince}/districts`
+          `http://localhost:10000/api/provinces/${selectedProvince}/districts`
         )
         .then((response) => {
           setDistricts(response.data);
@@ -116,7 +116,7 @@ const UserAccount = ({
   useEffect(() => {
     if (selectedDistrict) {
       axios
-        .get(`https://back-end-42ja.onrender.com/api/districts/${selectedDistrict}/wards`)
+        .get(`http://localhost:10000/api/districts/${selectedDistrict}/wards`)
         .then((response) => {
           setWards(response.data);
         })
@@ -147,7 +147,7 @@ const UserAccount = ({
 
     axios
       .post(
-        "https://back-end-42ja.onrender.com/users/upload-avatar",
+        "http://localhost:10000/users/upload-avatar",
         { avatar },
         {
           headers: {
@@ -177,7 +177,7 @@ const UserAccount = ({
     if (username !== user.username && username) {
       updates.push(
         axios.post(
-          "https://back-end-42ja.onrender.com/users/update-username",
+          "http://localhost:10000/users/update-username",
           { username },
           {
             headers: { Authorization: `Bearer ${token}` },
@@ -190,7 +190,7 @@ const UserAccount = ({
     if (fullAddress !== user.address && fullAddress) {
       updates.push(
         axios.post(
-          "https://back-end-42ja.onrender.com/users/update-address",
+          "http://localhost:10000/users/update-address",
           { address: fullAddress },
           {
             headers: { Authorization: `Bearer ${token}` },
@@ -203,7 +203,7 @@ const UserAccount = ({
     if (phone !== user.phone && phone) {
       updates.push(
         axios.post(
-          "https://back-end-42ja.onrender.com/users/update-phone",
+          "http://localhost:10000/users/update-phone",
           { phone },
           {
             headers: { Authorization: `Bearer ${token}` },

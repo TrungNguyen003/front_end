@@ -385,7 +385,7 @@ const Orders = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
                 <div className="flex-column-e-117">
                   {/* Nếu phương thức thanh toán là "stripe" và trạng thái là "chưa giải quyết" */}
                   {orderDetails.paymentMethod === "stripe" &&
-                  orderDetails.status === "chưa giải quyết" ? (
+                  orderDetails.paymentStatus === "chưa giải quyết" ? (
                     <button
                       className="rectangle-3-117"
                       onClick={() => handlePayment(orderDetails._id)}
