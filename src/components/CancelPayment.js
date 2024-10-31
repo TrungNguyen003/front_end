@@ -126,7 +126,7 @@ const CancelPayment = ({
         </button>
         <div className="modal-body">
           <div className="invoice-header text-center mb-4">
-            <h2>Hóa đơn PetStore</h2>
+            <h2>Hóa đơn PetsStore</h2>
             <p>102 Tam Trinh, Hoàng Mai, Hà Nội, Việt Nam</p>
             <p>Email: support@petstore.com | SĐT: 0123456789</p>
           </div>

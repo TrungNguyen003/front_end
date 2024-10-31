@@ -158,15 +158,18 @@ const Orders = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
     }
   };
 
-  const handleReceivedConfirmation = async (orderId) => {  
+  const handleReceivedConfirmation = async (orderId) => {
     try {
-      const response = await fetch(`https://back-end-42ja.onrender.com/orders/orders/${orderId}/received`, {
-        method: 'PUT',
-        headers: {
-          'Authorization': `Bearer ${authToken}`, // Đặt token vào header
-        },
-      });
-  
+      const response = await fetch(
+        `https://back-end-42ja.onrender.com/orders/orders/${orderId}/received`,
+        {
+          method: "PUT",
+          headers: {
+            Authorization: `Bearer ${authToken}`, // Đặt token vào header
+          },
+        }
+      );
+
       const data = await response.json();
       if (response.ok) {
         toast.success("Đơn hàng đã được xác nhận là đã nhận hàng."); // Hiển thị thông báo thành công
@@ -179,8 +182,6 @@ const Orders = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
       toast.error("Đã xảy ra lỗi khi xác nhận đơn hàng.");
     }
   };
-  
-  
 
   const calculateEstimatedDeliveryDate = (address) => {
     const today = new Date();
@@ -223,13 +224,17 @@ const Orders = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
   };
 
   if (loading) {
-    return  <div style={{ textAlign: "center", marginTop: "50px" }}>
-    <ClipLoader size={50} color={"#3498db"} loading={loading} />
-  </div>;
+    return (
+      <div style={{ textAlign: "center", marginTop: "50px" }}>
+        <ClipLoader size={50} color={"#3498db"} loading={loading} />
+      </div>
+    );
   }
 
   if (error) {
-    return <div style={{ textAlign: "center", marginTop: "50px" }}>{error}</div>;
+    return (
+      <div style={{ textAlign: "center", marginTop: "50px" }}>{error}</div>
+    );
   }
 
   return (
@@ -375,7 +380,7 @@ const Orders = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
               </div>
               <div className="rectangle-2-117">
                 <span className="thank-you-shop-pets-117">
-                  cảm ơn bạn đã mua sắm tại shopPets!
+                  cảm ơn bạn đã mua sắm tại PetsStore!
                 </span>
                 <div className="flex-column-e-117">
                   {/* Nếu phương thức thanh toán là "stripe" và trạng thái là "chưa giải quyết" */}
@@ -409,14 +414,12 @@ const Orders = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
                         Đã nhận được hàng
                       </span>
                     </button>
-                  ) :  orderDetails.status === "đã nhận hàng" ? (
+                  ) : orderDetails.status === "đã nhận hàng" ? (
                     <button
                       className="rectangle-3-117"
                       onClick={() => openRefundModal()}
                     >
-                      <span className="cancel-order-117">
-                        Trả hàng
-                      </span>
+                      <span className="cancel-order-117">Trả hàng</span>
                     </button>
                   ) : null}
 
@@ -461,24 +464,32 @@ const Orders = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
                 </div>
 
                 {/* Thời gian giao hàng dự kiến */}
-                <div className="flex-row-s-117">
-                  <div className="delivery-time-estimate">
-                    <span className="delivery-time-title">
-                      Thời gian giao hàng dự kiến:
-                    </span>
-                    <span className="delivery-time-value">
-                      {orderDetails.address.includes("Hà Nội") ||
-                      orderDetails.address.includes("HCM")
-                        ? "1-2 ngày "
-                        : "2-3 ngày "}
-                    </span>
-                    <span className="estimated-delivery-date">
-                      (Dự kiến giao hàng vào:{" "}
-                      {calculateEstimatedDeliveryDate(orderDetails.address)})
-                    </span>
+                {orderDetails.status !== "yêu cầu hoàn trả" && (
+                  <div className="flex-row-s-117">
+                    <div className="delivery-time-estimate">
+                      <span className="delivery-time-title">
+                        Thời gian giao hàng dự kiến:
+                      </span>
+                      <span className="delivery-time-value">
+                        {orderDetails.address.includes("Hà Nội") ||
+                        orderDetails.address.includes("HCM")
+                          ? "1-2 ngày "
+                          : "2-3 ngày "}
+                      </span>
+                      <span className="estimated-delivery-date">
+                        (Dự kiến giao hàng vào:{" "}
+                        {calculateEstimatedDeliveryDate(orderDetails.address)})
+                      </span>
+                    </div>
                   </div>
-                </div>
-
+                )}
+                {orderDetails.status === "yêu cầu hoàn trả" && (
+                  <div className="flex-row-s-117">
+                    <div className="delivery-time-estimate">
+                    <h6>Lý do hoàn trả: {orderDetails.refundReason}</h6>  
+                    </div>
+                  </div>
+                )}
                 {/* Danh sách sản phẩm */}
                 <div className="product-list">
                   {orderDetails.items.map((item) => (
@@ -566,27 +577,37 @@ const Orders = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
         overlayClassName="ReactModal__Overlay-2"
         contentLabel="Refund Reason"
       >
-        <h2>Chọn lý do hoàn tiền</h2>
-        <select
-          value={refundReason}
-          onChange={(e) => setRefundReason(e.target.value)}
-        >
-          <option value="">-- Chọn một lý do --</option>
-          <option value="Khác với mô tả">Khác với mô tả</option>
-          <option value="Muốn mua sản phẩm khác">Muốn mua sản phẩm khác</option>
-          <option value="Chất lượng sản phẩm không tốt">
-            Chất lượng sản phẩm không tốt
-          </option>
-          <option value="Khác">Khác</option>
-        </select>
-        <button
-          className="btn btn-danger"
-          onClick={() => handleRefundRequest(orderDetails._id)}
-        >
-          Xác nhận hoàn tiền
-        </button>
-        <button onClick={closeRefundModal}>Đóng</button>
+        <div className="modal-content-1000">
+          <h2>Chọn lý do hủy đơn</h2>
+          <select
+            value={refundReason}
+            onChange={(e) => setRefundReason(e.target.value)}
+            className="refund-select-1000"
+          >
+            <option value="">-- Chọn một lý do --</option>
+            <option value="Khác với mô tả">Khác với mô tả</option>
+            <option value="Muốn mua sản phẩm khác">
+              Muốn mua sản phẩm khác
+            </option>
+            <option value="Chất lượng sản phẩm không tốt">
+              Chất lượng sản phẩm không tốt
+            </option>
+            <option value="Khác">Khác</option>
+          </select>
+          <div className="modal-buttons-1000">
+            <button
+              className="btn btn-danger"
+              onClick={() => handleRefundRequest(orderDetails._id)}
+            >
+              Xác nhận yêu cầu hủy đơn
+            </button>
+            <button className="btn btn-secondary" onClick={closeRefundModal}>
+              Đóng
+            </button>
+          </div>
+        </div>
       </Modal>
+
       <ToastContainer />
     </>
   );
