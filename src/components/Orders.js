@@ -83,10 +83,10 @@ const Orders = ({ isAuthenticated, user, setIsAuthenticated, setUser }) => {
         sortedOrders.forEach((order) => {
           if (order.status === "chưa giải quyết") counts.pending += 1;
           if (order.status === "chưa thanh toán") counts.unpaid += 1;
-          if (order.status === "Đơn vị vận chuyển lấy hàng thành công")
+          if (order.status === "đang vận chuyển")
             counts.shipped += 1;
-          if (order.status === "trả trước") counts.paid += 1;
-          if (order.status === "đơn hàng đã hoàn thành") counts.completed += 1;
+          if (order.paymentStatus === "trả trước") counts.paid += 1;
+          if (order.status === "hoàn thành") counts.completed += 1;
         });
         setStatusCounts(counts);
 
